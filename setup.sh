@@ -18,7 +18,7 @@ do
     echo -e "${YELLOW}Installing packages...${RC}"
     
     # customize packages you want to install
-    sudo pacman -S hyprpaper waybar nwg-look thunar thunar-archive-plugin xarchiver gvfs-afc gvfs-gphoto2 imagemagick pavucontrol brightnessctl wl-clipboard ristretto unzip unrar vlc qbittorrent ttf-jetbrains-mono-nerd papirus-icon-theme adobe-source-han-sans-jp-fonts
+    sudo pacman -S hyprpaper waybar nwg-look thunar thunar-archive-plugin xarchiver gvfs-afc gvfs-gphoto2 imagemagick pavucontrol brightnessctl wl-clipboard ristretto unzip unrar alsa-utils vlc qbittorrent ttf-jetbrains-mono-nerd papirus-icon-theme adobe-source-han-sans-jp-fonts
 
     # if you want to use "paru" instead of yay you can change the URL: https://aur.archlinux.org/paru-bin.git
     echo -e "${YELLOW}Installing yay as AUR helper...${RC}"
