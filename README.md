@@ -1,4 +1,4 @@
-# Arch Linux & Hyprland dotfiles
+# Arch Linux & Hyprland Setup
 My personal dotfiles for Arch Linux & Hyprland desktop.
 
 **Note:** This setup will **ONLY** work if you installed Arch Linux with the **archinstall** script choosing the Hyprland option as the WM.
