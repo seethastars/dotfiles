@@ -25,7 +25,7 @@ cp -r hypr/ waybar/ wofi/ wlogout/ kitty/ neofetch/ ~/.config
 ```
 
 # GTK Theme
-Download this gtk theme:
+Download this GTK theme:
 
 **Graphite Dark**:
 
