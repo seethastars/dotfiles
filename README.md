@@ -23,7 +23,7 @@ Once the installation is finished, copy the config files into ```~/.config```.
 cd Hyprblack/
 cp -r hypr/ waybar/ wofi/ wlogout/ kitty/ neofetch/ ~/.config
 ```
-`
+
 # GTK Theme
 Download this gtk theme:
 
