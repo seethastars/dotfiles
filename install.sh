@@ -18,7 +18,7 @@ do
     echo -e "${YELLOW}Installing packages...${RC}"
     
     # customize packages you want to install
-    sudo pacman -S hyprland qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent qt5ct kvantum-qt5 waybar wofi kitty hyprpaper hyprlock nwg-look thunar thunar-archive-plugin xarchiver gvfs-afc gvfs-gphoto2 imagemagick pavucontrol brightnessctl wl-clipboard ristretto unzip unrar p7zip grim slurp gamemode alsa-utils dosfstools ntfsprogs vlc papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd adobe-source-han-sans-jp-fonts
+    sudo pacman -S hyprland qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent qt5ct kvantum-qt5 waybar wofi kitty hyprpaper hyprlock nwg-look thunar thunar-archive-plugin xarchiver gvfs-afc gvfs-gphoto2 imagemagick pavucontrol brightnessctl wl-clipboard ristretto qbittorrent unzip unrar p7zip grim slurp gamemode alsa-utils dosfstools ntfsprogs vlc papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd adobe-source-han-sans-jp-fonts
 
     echo -e "${YELLOW}Installing paru as AUR helper...${RC}"
     git clone https://aur.archlinux.org/paru-bin.git
