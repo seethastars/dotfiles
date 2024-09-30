@@ -101,8 +101,8 @@ Installing Xfce is easy as:
     ```sh
     ./xfce.sh
     ```
-### Contribuiting
+## Contribuiting
 
-A huge thanks to Chris Titus Tech for everything that i learned from him and for the "mybash" config that i used in my Hyprnord theme.
+A huge thanks to Chris Titus Tech for everything that i learned from him and for the "mybash" config that i used in my themes <3.
 
 ![@ChrisTitusTech](https://github.com/ChrisTitusTech)
