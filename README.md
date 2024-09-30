@@ -39,14 +39,17 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 <div align="center">
 
+### Hyprnord
+![image](assets/hyprnord.png)
+
 ### Hyprfuture
 ![image](assets/hyprfuture.png)
 
+### hyprvertical
+![image](assets/hyprvertical.png)
+
 ### Hyprmocha
 ![image](assets/hyprmocha.png)
-
-### Hyprvertical
-![image](assets/hyprvertical.png)
 
 </div>
 
