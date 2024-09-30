@@ -1,0 +1,154 @@
+/* --- General Config --- */ 
+* {
+	  font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
+	  font-weight: bold;
+	  font-size: 14px;
+	  min-height: 10px;
+    border: none;
+}
+
+
+/* --- See The Stars Colorscheme --- */
+
+@define-color black     #111213;
+@define-color grey      #848884;
+@define-color white     #f2f3f4;
+
+@define-color red       #e67e80;
+@define-color orange    #e69875;
+@define-color yellow    #FFFF8F;
+@define-color green     #83c092;
+@define-color blue      #7fbbb3;
+@define-color purple    #CF9FFF;
+
+
+/* --- Waybar General Config --- */
+window#waybar {
+	  color: rgba(53, 185, 171, 1);
+    background-color: rgba(17, 18, 19, 0);
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/* --- Custom Stuff --- */
+#custom-ps2 {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-arch {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+#custom-shiey {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+#custom-separator {
+    color: @white;
+}
+
+
+#window {
+	  color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: 0px;
+}
+
+#workspaces {
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#workspaces button {
+    color: @grey;
+    padding-right: 7px;
+}
+
+#workspaces button.focused {
+    color: @white;
+}
+
+#workspaces button:hover {
+    color: @white;
+    border-radius: 10px;
+}
+#workspaces button.active {
+    color: @white;
+    border-radius: 7px;
+}
+
+#tray {
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#memory {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#cpu {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#pulseaudio {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#battery {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#clock {
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

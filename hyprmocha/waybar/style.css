@@ -1,0 +1,135 @@
+* {
+    border: none;
+	  font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
+	  font-weight: bold;
+	  font-size: 14px;
+	  min-height: 10px;
+}
+
+/* Catpuccin Mocha Coloscheme */
+
+@define-color crust     #11111b;
+@define-color mantle    #181825;
+@define-color base      #1e1e2e;
+@define-color surf0     #313244;
+
+@define-color rose      #f5e0dc;
+@define-color pink      #f5c2e7;
+@define-color mauve     #cba6f7;
+@define-color red       #f38ba8;
+@define-color maroon    #eba0ac;
+@define-color peach     #fab387;
+@define-color yellow    #f9e2af;
+@define-color green     #a6e3a1;
+@define-color teal      #94e2d5;
+@define-color sapphire  #74c7ec;
+@define-color blue      #89b4fa;
+@define-color lavander  #b4befe;
+@define-color text      #cdd6f4;
+
+
+window#waybar {
+	  color: rgba(53, 185, 171, 1);
+    background-color: rgba(17, 17, 27, 1);
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#custom-ps2 {
+    color: @white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-arch {
+    color: @lavander;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-separator {
+    color: @white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#custom-cmus {
+    color: @white;
+}
+
+#custom-shiey {
+    color: @white;
+}
+
+#window {
+	  color: @mauve;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid @mauve;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: 0px;
+}
+
+#workspaces {
+    border-bottom: 2px solid @blue;
+}
+
+#workspaces button {
+    color: @surf0;
+    padding-right: 10px;
+}
+
+#workspaces button.focused {
+    color: @white;
+}
+
+#workspaces button.visible {
+    color: rgba(115, 186, 37, 1);
+}
+
+#workspaces button.urgent {
+    color: rgba(33, 164, 223, 1);
+}
+
+#workspaces button:hover {
+    color: @white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+}
+#workspaces button.active {
+    color: @white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+}
+
+#tray {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    color: @yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 7px;
+    border-bottom: 2px solid @yellow;
+}
+
+#battery {
+    color: @green;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 7px;
+    border-bottom: 2px solid @green;
+}
+
+#clock {
+    color: @red;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid @red;
+}

@@ -1,0 +1,115 @@
+/* --- General Config --- */ 
+* {
+	  font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
+	  font-weight: bold;
+	  font-size: 14px;
+	  min-height: 10px;
+    border: none;
+}
+
+
+/* --- See The Stars Colorscheme --- */
+
+@define-color black     #111213;
+@define-color grey      #848884;
+@define-color white     #f2f3f4;
+
+@define-color red       #e67e80;
+@define-color orange    #e69875;
+@define-color yellow    #FFFF8F;
+@define-color green     #83c092;
+@define-color blue      #7fbbb3;
+@define-color purple    #CF9FFF;
+
+
+/* --- Waybar General Config --- */
+window#waybar {
+    background-color: rgba(21, 21, 21, 1);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+}
+
+
+/* --- Custom Stuff --- */
+#custom-ps2 {
+    color: @white;
+}
+
+#custom-arch {
+    color: @white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-left: 3px;
+}
+
+#custom-shiey {
+    color: @white;
+}
+
+#custom-separator {
+    color: @white;
+}
+
+
+#window {
+	  color: @white;
+    padding-left: 7px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: 0px;
+}
+
+#workspaces {
+    padding-left: 2px;
+    transition: 0.2s ease;
+}
+
+#workspaces button {
+    color: @grey;
+}
+
+#workspaces button.focused {
+    color: @white;
+}
+
+#workspaces button:hover {
+    color: @white;
+}
+#workspaces button.active {
+    color: @white;
+}
+
+#tray {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+#pulseaudio {
+    color: @white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+#battery {
+    color: @white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+
+#battery.charging {
+    color: @white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+#clock {
+    color: @white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

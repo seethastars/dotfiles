@@ -1,0 +1,218 @@
+{
+  // --- General Config ---
+	"layer": "top",
+  "position": "left",
+	"height": 755,
+	"width": 20,
+	"margin-top": 6,
+  "margin-bottom": 6,
+  "margin-left": 6,
+  "margin-right": 4,
+
+
+  // --- Modules ---   
+	"modules-left": ["custom/arch", "hyprland/workspaces#cc2"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["tray", "pulseaudio", "battery", "custom/separator", "clock"],
+  
+  
+  // --- Custom Stuff --- 
+  "custom/ps2": {
+      "format": "{icon}",
+      "format-icons": " ",
+      "tooltip-format": "PS2 Enjoyer",
+      "on-click": "wofi --show drun"
+  },
+
+  "custom/arch": {
+      "format": "{icon}",
+      "format-icons": " ",
+      "tooltip-format": "BTW",
+      "on-click": "wofi --show drun"
+  },
+
+  "custom/shiey": {
+      "format": "ILLEGAL 󰐕 FREEDOM"
+  },
+
+  "custom/separator": {
+      "format": "{icon}",
+      "format-icons": "|",
+      "rotate": 90
+  },
+
+
+  // --- Workspaces Styles ---
+
+  // Numbers Style
+	"hyprland/workspaces": {
+		  "format": "{icon}",
+		  "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+		  "persistent-workspaces": {
+        "1": [],
+		    "2": [],
+		    "3": [],
+        "4": [],
+        "5": [],
+		  },
+      "format-icons": {
+		    "1": "1",
+		    "2": "2",
+		    "3": "3",
+		    "4": "4",
+		    "5": "5",
+		    "6": "6",
+		    "7": "7",
+		    "8": "8",
+		    "9": "9",
+		    "10": "10",
+	    },
+		  //"sort-by-number": true
+	},
+
+  // Circles Style
+  "hyprland/workspaces#cc": {
+	    "active-only": false,
+	    "all-outputs": true,
+	    "format": "{icon}",
+	    "show-special": false,
+	    "on-click": "activate",
+	    "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+	    "persistent-workspaces": {
+		      "1": [],
+		      "2": [],
+		      "3": [],
+		      "4": [],
+		      "5": [],
+	    },
+	    "format-icons": {
+		  "active": "",
+		  "default": "",
+	    },
+  },
+
+  // Circles Style #2
+  "hyprland/workspaces#cc2": {
+	    "active-only": false,
+	    "all-outputs": true,
+	    "format": "{icon}",
+	    "show-special": false,
+	    "on-click": "activate",
+	    "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+	    "persistent-workspaces": {
+		      "1": [],
+		      "2": [],
+		      "3": [],
+		      "4": [],
+		      "5": [],
+	    },
+	    "format-icons": {
+		  "active": " ",
+		  "default": " ",
+	    },
+  },
+
+  // Japanese Style
+	"hyprland/workspaces#jp": {
+		  "format": "{icon}",
+		  "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+		  "persistent-workspaces": {
+        "1": [],
+		    "2": [],
+		    "3": [],
+        "4": [],
+        "5": [],
+		  },
+      "format-icons": {
+		    "1": "一",
+		    "2": "二",
+		    "3": "三",
+		    "4": "四",
+		    "5": "五",
+		    "6": "六",
+		    "7": "七",
+		    "8": "八",
+		    "9": "九",
+		    "10": "十",
+	    },
+		  //"sort-by-number": true
+	},
+
+  "hyprland/window": {
+      "format": "{class}",
+      "max-length": 50,
+      "rotate": 90,
+      "separate-outputs": true
+  },
+
+	"tray": {
+		//"icon-size": 21,
+		  "spacing": 15
+	},
+
+  "pulseaudio": {
+		  "scroll-step": 5,
+		  "format": "{icon}",
+      "format-muted": " ",
+      "tooltip-format": "{volume}%",
+		  "format-icons": {
+			"default": [" ", " ", " "],
+      "headphone": " "
+		},
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol -t 3",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+    "smooth-scrolling-threshold": 1,
+	},
+
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "full-at": 100,
+    "design-capacity": false,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 10
+    },
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    "format-full": "{icon}",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["", "", "", "", ""],
+    "format-time": "\n{H}h\n{M}\nmin",
+    "tooltip": true,
+    "tooltip-format": "{timeTo} {power}w",
+  },
+
+  "clock": {
+      "format": "{:%H\n%M}",
+      "format-alt": "{:%a\n%d\n%b}",
+      "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+        "mode":             "year",
+        "mode-mon-col":          3,
+        "weeks-pos":       "right",
+        "on-scroll":             1,
+          "format": {
+                        "months":     "<span color='#ffead3'><b>{}</b></span>",
+                        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                    }
+      },
+      "actions": {
+      "on-click-right"    : "mode",
+    },
+    "interval": 1
+  },
+}
