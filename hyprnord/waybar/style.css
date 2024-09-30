@@ -1,0 +1,140 @@
+/* --- General Config --- */ 
+* {
+	  font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
+	  font-weight: bold;
+	  font-size: 14px;
+	  min-height: 10px;
+    border: none;
+}
+
+
+/* --- See The Stars Colorscheme --- */
+
+@define-color black     #111213;
+@define-color grey      #848884;
+@define-color white     #f2f3f4;
+
+@define-color red       #e67e80;
+@define-color orange    #e69875;
+@define-color yellow    #FFFF8F;
+@define-color green     #83c092;
+@define-color blue      #7fbbb3;
+@define-color purple    #CF9FFF;
+
+
+/* --- Waybar General Config --- */
+window#waybar {
+	  color: rgba(53, 185, 171, 1);
+    background-color: rgba(12, 20, 29, 1);
+    border-radius: 0px;
+}
+
+
+/* --- Custom Stuff --- */
+#custom-ps2 {
+    color: @white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-arch {
+    color: @white;
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#custom-shiey {
+    color: @white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+#custom-separator {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+#window {
+    color: @white;
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: 0px;
+}
+
+#workspaces {
+    border-radius: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
+#workspaces button {
+    color: @grey;
+    padding-right: 7px;
+}
+
+#workspaces button.focused {
+    color: @white;
+}
+
+#workspaces button:hover {
+    color: @white;
+    border-radius: 0px;
+}
+#workspaces button.active {
+    color: @white;
+    border-radius: 7px;
+}
+
+#tray {
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#memory {
+    color: @white;
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#cpu {
+    color: @white;
+    background-color: @black;
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#pulseaudio {
+    color: @white;
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+#battery {
+    color: @white;
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    color: @white;
+    border-radius: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

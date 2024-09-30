@@ -41,15 +41,18 @@ do
     read -p "What theme do you want? (1)=Hyprblack (2)=Hyprmocha (3)=Hyprvertical " choice   #user choice
         if [[ $choice == 1 ]]; then
 
-          echo -e "${YELLOW}Copying hyprblack dotfiles into ~/.config...${RC}"
-          cd hyprblack/
+          echo -e "${YELLOW}Copying hyprfuture dotfiles into ~/.config...${RC}"
+	        mkdir ~/Pictures
+	        mv Wallpapers ~/Pictures
+          cd hyprfuture/
           cp -r hypr/ waybar/ wofi/ foot/ fastfetch/ starship.toml ~/.config/ && mv bashrc .bashrc && cp -r .bashrc ~/
-          echo -e "${GREEN}Hyprblack dotfiles copied.${RC}"
+          echo -e "${GREEN}Hyprfuture dotfiles copied.${RC}"
           echo -e "${BLUE}\nEnjoy Hyprland!${RC}"
           exit 1
 
         elif [[ $choice == 2 ]]; then 
           echo -e "${YELLOW}Copying hyprmocha dotfiles into ~/.config...${RC}"
+	        mkdir ~/Pictures && mv Wallpapers ~/Pictures
           cd hyprmocha/
           cp -r hypr/ waybar/ wofi/ foot/ fastfetch/ starship.toml ~/.config/ && mv bashrc .bashrc && cp -r .bashrc ~/
           echo -e "${GREEN}Hyprmocha dotfiles copied.${RC}"
@@ -58,7 +61,8 @@ do
 
         elif [[ $choice == 3 ]]; then 
           echo -e "${YELLOW}Copying hyprvertical dotfiles into ~/.config...${RC}"
-          cd hyprtop/
+          mkdir ~/Pictures && mv Wallpapers ~/Pictures
+          cd hyprvertical/
           cp -r hypr/ waybar/ wofi/ foot/ fastfetch/ starship.toml ~/.config/ && mv bashrc .bashrc && cp -r .bashrc ~/
           echo -e "${GREEN}Hyprvertical dotfiles copied.${RC}"
           echo -e "${BLUE}\nEnjoy Hyprland!${RC}"
