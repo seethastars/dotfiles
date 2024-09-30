@@ -37,11 +37,6 @@ do
     paru -S librewolf-bin
     echo -e "${GREEN}AUR packages installed.${RC}"
 
-    echo -e "${YELLOW}Cloning wallpapers repo...${RC}"
-    git clone https://github.com/seethastars/wallpapers
-    mkdir -p Pictures
-    mv wallpapers/Wallpapers Pictures/ && mv Pictures/ ~/
-    rm -rf wallpapers/
 
     read -p "What theme do you want? (1)=Hyprblack (2)=Hyprmocha (3)=Hyprvertical " choice   #user choice
         if [[ $choice == 1 ]]; then
