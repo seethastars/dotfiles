@@ -45,7 +45,7 @@ To install and set up the Hyprland dotfiles, follow these steps:
 ### Hyprfuture
 ![image](assets/hyprfuture.png)
 
-### hyprvertical
+### Hyprvertical
 ![image](assets/hyprvertical.png)
 
 ### Hyprmocha
@@ -101,3 +101,8 @@ Installing Xfce is easy as:
     ```sh
     ./xfce.sh
     ```
+### Contribuiting
+
+A huge thanks to Chris Titus Tech for everything that i learned from him and for the "mybash" config that i used in my Hyprnord theme.
+
+![@ChrisTitusTech](https://github.com/ChrisTitusTech)
