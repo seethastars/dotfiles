@@ -25,7 +25,7 @@
 /* --- Waybar General Config --- */
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
-    background-color: rgba(12, 20, 29, 1);
+    background-color: rgba(20, 25, 29, 1);
     border-radius: 0px;
 }
 
