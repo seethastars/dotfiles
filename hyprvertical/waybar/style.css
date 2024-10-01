@@ -31,19 +31,11 @@ window#waybar {
 
 
 /* --- Custom Stuff --- */
-#custom-ps2 {
-    color: @white;
-}
-
 #custom-arch {
     color: @white;
     margin-top: 7px;
     margin-bottom: 7px;
     padding-left: 3px;
-}
-
-#custom-shiey {
-    color: @white;
 }
 
 #custom-separator {

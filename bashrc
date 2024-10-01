@@ -26,10 +26,13 @@ alias ungz='tar -xvzf'
 PS1='[\u@\h \W]\$ '
 
 # Fastfetch startup
-# fastfetch
+fastfetch
 
 # Nerfetch
-nerdfetch
+# nerdfetch
 
 # Starship startup
 eval "$(starship init bash)"
+
+# Created by `pipx` on 2024-09-30 14:56:38
+export PATH="$PATH:/home/seethestars/.local/bin"

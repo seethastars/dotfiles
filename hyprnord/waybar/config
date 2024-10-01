@@ -14,22 +14,11 @@
   
   
   // --- Custom Stuff --- 
-  "custom/ps2": {
-      "format": "{icon}",
-      "format-icons": " ",
-      "tooltip-format": "PS2 Enjoyer",
-      "on-click": "wofi --show drun"
-  },
-
   "custom/arch": {
       "format": "{icon}",
       "format-icons": " ",
       "tooltip-format": "BTW",
       "on-click": "wofi --show drun"
-  },
-
-  "custom/shiey": {
-      "format": "ILLEGAL 󰐕 FREEDOM"
   },
 
   "custom/separator": {

@@ -1,3 +1,4 @@
+/* --- General Config --- */
 * {
     border: none;
 	  font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
@@ -27,7 +28,7 @@
 @define-color lavander  #b4befe;
 @define-color text      #cdd6f4;
 
-
+/* --- Waybar Config --- */
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
     background-color: rgba(17, 17, 27, 1);
@@ -36,6 +37,8 @@ window#waybar {
     margin-left: 5px;
 }
 
+
+/* --- Custom Stuff --- */
 #custom-ps2 {
     color: @white;
     padding-left: 10px;
@@ -54,13 +57,6 @@ window#waybar {
     margin-left: 5px;
 }
 
-#custom-cmus {
-    color: @white;
-}
-
-#custom-shiey {
-    color: @white;
-}
 
 #window {
 	  color: @mauve;

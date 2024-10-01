@@ -1,14 +1,19 @@
 {
+  // --- General Config ---
 	"layer": "top",
   "position": "top",
 	"height": 30,
 	"width": 1366,
 	"margin-top": 0,
-    
+   
+
+  // --- Modules ---
 	"modules-left": ["custom/arch", "custom/separator", "hyprland/window"],
 	"modules-center": ["hyprland/workspaces#jp"],
 	"modules-right": ["tray", "pulseaudio", "battery", "clock"],
   
+
+  // --- Custom Stuff ---
   "custom/ps2": {
       "format": "{icon}",
       "format-icons": "  |",
@@ -28,6 +33,9 @@
       "format-icons": "|",
   },
 
+  
+  // --- Workspaces Styles ---
+  
   // Numbers Style
 	"hyprland/workspaces": {
 		  "format": "{icon}",
@@ -77,6 +85,28 @@
 		  "default": "",
 	    },
   },
+  
+  // Circles Style #2
+  "hyprland/workspaces#cc2": {
+	    "active-only": false,
+	    "all-outputs": true,
+	    "format": "{icon}",
+	    "show-special": false,
+	    "on-click": "activate",
+	    "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+	    "persistent-workspaces": {
+		      "1": [],
+		      "2": [],
+		      "3": [],
+		      "4": [],
+		      "5": [],
+	    },
+	    "format-icons": {
+		  "active": "",
+		  "default": "",
+	    },
+  },
 
   // Japanese Style
 	"hyprland/workspaces#jp": {
@@ -109,31 +139,25 @@
   "hyprland/window": {
       "format": "{class}",
       "max-length": 20,
-      "rewrite": {
-          "(.*) — Librewolf": "  $1",
-          "(.*) - bash": "> [$1]"
-      },
       "separate-outputs": true
-  },
-
-  "custom/cmus": {
-	    "format": "♪ {}",
-	    //"max-length": 15,
-	    "interval": 10,
-	    "exec": "cmus-remote -C \"format_print '%a - %t'\"", // artist - title
-	    "exec-if": "pgrep cmus",
-	    "on-click": "cmus-remote -u",                        //toggle pause
-	    "escape": true                                       //handle markup entities
-  },
-
-  "custom/shiey": {
-      "format": "ILLEGAL 󰐕 FREEDOM"
   },
 
 	"tray": {
 		//"icon-size": 21,
 		  "spacing": 15
 	},
+  
+  "memory": {
+    "interval": 30,
+    "format": "[RAM   {}%]",
+    "max-length": 30
+  },
+
+  "cpu": {
+    "interval": 10,
+    "format": "[CPU   {usage}%]",
+    "max-length": 30
+  },
 
   "pulseaudio": {
 		  "scroll-step": 5,
@@ -174,7 +198,7 @@
   "clock": {
       "format": "󰃭 {:%d %a - 󰥔 %H:%M}",
       "format-alt": "Present Day, Present Time",
-      "tooltip-format": "calendar i guess",
+      "tooltip-format": "calendar i guess",     // fix calendar someday
       "actions": {
           "on-click-right"    : "mode",
         },

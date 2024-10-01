@@ -8,21 +8,21 @@
 }
 
 
-/* --- See The Stars Colorscheme --- */
+/* --- Nord Colorscheme --- */
 
 @define-color black     #111213;
-@define-color grey      #848884;
-@define-color white     #f2f3f4;
+@define-color grey      #3B4252;
+@define-color white     #E5E9F0;
 
-@define-color red       #e67e80;
+@define-color red       #BF616A;
 @define-color orange    #e69875;
-@define-color yellow    #FFFF8F;
-@define-color green     #83c092;
-@define-color blue      #7fbbb3;
-@define-color purple    #CF9FFF;
+@define-color yellow    #EBCB8B;
+@define-color green     #A3BE8C;
+@define-color blue      #81A1C1;
+@define-color cyan      #88C0D0;
+@define-color magenta   #B48EAD;
 
-
-/* --- Waybar General Config --- */
+/* --- Waybar Config --- */
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
     background-color: rgba(20, 25, 29, 1);
@@ -31,25 +31,10 @@ window#waybar {
 
 
 /* --- Custom Stuff --- */
-#custom-ps2 {
-    color: @white;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 #custom-arch {
     color: @white;
-    border-radius: 0px;
     padding-left: 10px;
     padding-right: 0px;
-}
-
-#custom-shiey {
-    color: @white;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 7px;
 }
 
 #custom-separator {
@@ -59,9 +44,7 @@ window#waybar {
 
 #window {
     color: @white;
-    border-radius: 0px;
     padding-left: 10px;
-    padding-right: 0px;
 }
 
 window#waybar.empty #window {
@@ -70,10 +53,7 @@ window#waybar.empty #window {
 }
 
 #workspaces {
-    border-radius: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
+    padding-left: 10px;
 }
 
 #workspaces button {
@@ -87,54 +67,43 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
     color: @white;
-    border-radius: 0px;
 }
 #workspaces button.active {
     color: @white;
-    border-radius: 7px;
 }
 
+
 #tray {
-    border-radius: 0px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #memory {
     color: @white;
-    border-radius: 0px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 5px;
 }
 
 #cpu {
     color: @white;
-    background-color: @black;
-    border-radius: 0px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 5px;
 }
 
 #pulseaudio {
     color: @white;
-    border-radius: 0px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 5px;
 }
 
 #battery {
     color: @white;
-    border-radius: 0px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #clock {
     color: @white;
-    border-radius: 0px;
     padding-left: 10px;
     padding-right: 10px;
 }

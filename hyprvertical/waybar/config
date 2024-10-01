@@ -31,10 +31,6 @@
       "on-click": "wofi --show drun"
   },
 
-  "custom/shiey": {
-      "format": "ILLEGAL 󰐕 FREEDOM"
-  },
-
   "custom/separator": {
       "format": "{icon}",
       "format-icons": "|",
