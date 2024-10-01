@@ -67,6 +67,7 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
     color: @white;
+    border-radius: 0px;
 }
 #workspaces button.active {
     color: @white;
