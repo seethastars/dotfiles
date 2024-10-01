@@ -22,7 +22,7 @@ do
     echo -e "${YELLOW}Installing packages...${RC}"
 
       # customize packages you want to install
-    sudo pacman -S hyprland qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent hyprpaper hyprlock hypridle wl-clipboard waybar wofi foot starship nwg-look thunar thunar-archive-plugin gvfs gvfs-gphoto2 gvfs-afc xarchiver imagemagick ristretto pavucontrol brightnessctl unzip unrar p7zip gamemode grim slurp transmission-gtk htop cmus network-manager-applet alsa-utils dosfstools ntfsprogs papirus-icon-theme gnome-themes-extra ttf-dejavu ttf-jetbrains-mono-nerd ttf-firacode-nerd adobe-source-han-sans-jp-fonts noto-fonts-emoji
+    sudo pacman -S hyprland qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent hyprpaper hyprlock hypridle wl-clipboard waybar wofi foot starship nwg-look thunar thunar-archive-plugin gvfs gvfs-gphoto2 gvfs-afc xarchiver imagemagick ristretto pavucontrol brightnessctl unzip unrar p7zip gamemode lib32-vulkan radeon grim slurp transmission-gtk htop cmus network-manager-applet alsa-utils dosfstools ntfsprogs papirus-icon-theme gnome-themes-extra ttf-dejavu ttf-jetbrains-mono-nerd ttf-firacode-nerd adobe-source-han-sans-jp-fonts noto-fonts-emoji
 
     echo -e "${GREEN}Base packages installed.${RC}"
     echo -e "${YELLOW}Installing paru as AUR helper...${RC}"
