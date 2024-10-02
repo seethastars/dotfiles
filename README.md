@@ -20,20 +20,14 @@ To install and set up the Hyprland dotfiles, follow these steps:
     ```sh
     cd dotfiles/
     ```
-
-3. Make the install script executable:
-
-    ```sh
-    sudo chmod +x ./hyprland.sh
-    ```
     
-4. Run the install script:
+3. Run the install script:
 
     ```sh
     ./hyprland.sh
     ```
    
-5. Enjoy Hyprland!
+4. Enjoy Hyprland!
 
 ---
 
