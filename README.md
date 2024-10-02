@@ -81,9 +81,9 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 ## GUI Programs
 
-- ![Librewolf](https://librewolf.net/) - (Privacy focused Web Browser)
+- ![Librewolf](https://librewolf.net/) - (Privacy-Focused Web Browser)
 - ![VLC](https://www.videolan.org/vlc/) - (Media Player)
-- ![Qbittorrent](https://www.qbittorrent.org/) - (Torrent client)
+- ![Qbittorrent](https://www.qbittorrent.org/) - (Torrent Client)
 - ![Thunar](https://github.com/neilbrown/thunar) - (File Manager)
 
 ## CLI Programs
