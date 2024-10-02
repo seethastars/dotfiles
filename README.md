@@ -98,6 +98,7 @@ Just run the install script:
     ```sh
     ./xfce.sh
     ```
+
 ## Contribuiting
 
 A huge thanks to Chris Titus Tech for everything that i've learned from him and for the "mybash" config that i used in my themes <3.
