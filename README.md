@@ -79,12 +79,21 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 </div>
 
-## Other programs that i use
+## GUI Programs
 
-- ![Yazi](https://github.com/sxyazi/yazi) - (CLI File Manager)
+- ![Librewolf](https://librewolf.net/) - (Privacy focused Web Browser)
+- ![VLC](https://www.videolan.org/vlc/) - (Media Player)
+- ![Qbittorrent](https://www.qbittorrent.org/) - (Torrent client)
+- ![Thunar](https://github.com/neilbrown/thunar) - (File Manager)
+
+## CLI Programs
+
+- ![Foot](https://github.com/DanteAlighierin/foot) - (Lightweight Terminal for Wayland)
+- ![MPV](https://mpv.io/) - (Media Player)
+- ![cmus](https://github.com/cmus/cmus) - (Music Media Player)
 - ![Cava](https://github.com/karlstav/cava) - (Audio Visualizer)
 - ![Neovim](https://neovim.io/) - (Text Editor)
-- ![MPV](https://mpv.io/) - (Media Player)
+- ![Yazi](https://github.com/sxyazi/yazi) - (File Manager)
 
 ## Xfce Setup
 
