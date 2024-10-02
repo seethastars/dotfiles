@@ -93,12 +93,11 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 I made a simple script similar to the hyprland.sh one for installing xfce much faster if i want to use it as my DE.
 
-Just run the install script:
+1. Just run the install script:
 
     ```sh
     ./xfce.sh
     ```
-
 ## Contribuiting
 
 A huge thanks to Chris Titus Tech for everything that i've learned from him and for the "mybash" config that i used in my themes <3.
