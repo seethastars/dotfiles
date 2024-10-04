@@ -155,7 +155,7 @@
   "pulseaudio": {
 		  "scroll-step": 5,
 		  "format": "VOL: {volume}%",
-      "format-muted": "  muted",
+      "format-muted": "VOL: muted",
 		  "format-icons": {
 			"default": [" ", " ", " "],
       "headphone": " "
