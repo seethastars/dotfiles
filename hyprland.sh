@@ -38,7 +38,7 @@ do
     echo -e "${GREEN}AUR packages installed.${RC}"
 
     mkdir ~/Pictures && mv Wallpapers ~/Pictures
-    cp -r bashrc ~/ && mv ~/.bashrc bashrc
+    cp -r bashrc ~/ && mv ~/bashrc .bashrc
 
     read -p "What theme do you want? (1)=Hyprnord (2)=Hyprfuture (3)=Hyprvertical (4)=Hyprmocha " choice   #user choice
 
