@@ -1,3 +1,19 @@
+<div align="center">
+
+### Hyprnord
+![image](assets/hyprnord.png)
+
+### Hyprfuture
+![image](assets/hyprfuture.png)
+
+### Hyprvertical
+![image](assets/hyprvertical.png)
+
+### Hyprmocha
+![image](assets/hyprmocha.png)
+
+</div>
+
 <!-- Installation Instructions -->
 ## Hyprland Setup
 
@@ -28,24 +44,6 @@ To install and set up the Hyprland dotfiles, follow these steps:
     ```
    
 4. Enjoy Hyprland!
-
----
-
-<div align="center">
-
-### Hyprnord
-![image](assets/hyprnord.png)
-
-### Hyprfuture
-![image](assets/hyprfuture.png)
-
-### Hyprvertical
-![image](assets/hyprvertical.png)
-
-### Hyprmocha
-![image](assets/hyprmocha.png)
-
-</div>
 
 ## Keybinds
 
