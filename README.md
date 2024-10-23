@@ -55,7 +55,6 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 </small>
 
----
 </div>
 
 ## Contribuiting
