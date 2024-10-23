@@ -39,7 +39,7 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 | Mapping                 | Action                                           |
 | ----------------------- | ------------------------------------------------ |
-| `Super + Return`        | Open Terminal (Foot                              |
+| `Super + Return`        | Open Terminal (Foot)                             |
 | `Super + Q`             | Close Window                                     |
 | `Super + W`             | Open Web Browser - (Librewolf)                   |
 | `Super + E`             | Open File Manager - (Thunar)                     |
