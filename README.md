@@ -1,16 +1,6 @@
 <div align="center">
 
-### Hyprnord
-![image](assets/hyprnord.png)
-
-### Hyprfuture
-![image](assets/hyprfuture.png)
-
-### Hyprvertical
-![image](assets/hyprvertical.png)
-
-### Hyprmocha
-![image](assets/hyprmocha.png)
+![image](assets/hyprchill.png)
 
 </div>
 
@@ -42,8 +32,6 @@ To install and set up the Hyprland dotfiles, follow these steps:
     ```sh
     ./hyprland.sh
     ```
-   
-4. Enjoy Hyprland!
 
 ## Keybinds
 
@@ -51,14 +39,14 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 | Mapping                 | Action                                           |
 | ----------------------- | ------------------------------------------------ |
-| `Super + Return`        | Open Terminal                                    |
+| `Super + Return`        | Open Terminal (Foot                              |
 | `Super + Q`             | Close Window                                     |
 | `Super + W`             | Open Web Browser - (Librewolf)                   |
 | `Super + E`             | Open File Manager - (Thunar)                     |
 | `Super + R`             | Open App Launcher - (Wofi)                       |
 | `Super + L`             | Exec lockscreen - (Hyprlock)                     |
 | `Super + B`             | Restart Waybar                                   |
-| `Super + N`             | Change wallpaper                                 |
+| `Super + N`             | Change Wallpaper                                 |
 | `Super + M`             | Exit Hyprland                                    |
 
 <small>
