@@ -1,0 +1,52 @@
+/*
+
+██╗    ██╗ ██████╗ ███████╗██╗
+██║    ██║██╔═══██╗██╔════╝██║
+██║ █╗ ██║██║   ██║█████╗  ██║
+██║███╗██║██║   ██║██╔══╝  ██║
+╚███╔███╔╝╚██████╔╝██║     ██║
+ ╚══╝╚══╝  ╚═════╝ ╚═╝     ╚═╝
+
+Wofi Config File by See The Stars
+
+*/
+
+window {
+    padding: 50px;
+    background-color: rgba(17, 18, 19, 1);
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 14px;
+}
+
+#input {
+    margin: 20px 15px;
+    padding: 10px 20px;
+    background-color: #202020;
+    border: none;
+    color: #ffffff;
+}
+
+#input:focus {
+    box-shadow: none;
+}
+
+#inner-box {
+    margin: 0 15px;
+}
+
+#img {
+    margin: 10px;
+}
+
+#entry:selected {
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+#text {
+    color: #ffffff;
+}
+
+#text:selected {
+    color: #000000;
+}
