@@ -10,7 +10,7 @@
   // --- Modules ---   
 	"modules-left": ["custom/arch", "hyprland/workspaces#cc2", "hyprland/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "pulseaudio", "memory", "cpu", "battery"],
+	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
   
   
   // --- Custom Stuff --- 
@@ -18,7 +18,13 @@
       "format": "{icon}",
       "format-icons": " ",
       "tooltip-format": "BTW",
-      "on-click": "wofi --show drun"
+      "on-click": "rofi -show drun"
+  },
+
+  "custom/exit": {
+      "format": "",
+      "on-click": "wlogout",
+      "tooltip": false
   },
 
   "custom/separator": {

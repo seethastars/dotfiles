@@ -38,6 +38,12 @@ window#waybar {
     padding-left: 10px;
 }
 
+#custom-exit {
+    color: @red;
+    padding-left: 10px;
+    padding-right: 17px;
+}
+
 #custom-separator {
     color: @white;
 }
@@ -76,7 +82,6 @@ window#waybar.empty #window {
 }
 
 #tray {
-    background-color: @black;
     padding-left: 10px;
     padding-right: 10px;
 }
