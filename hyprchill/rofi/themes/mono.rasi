@@ -13,6 +13,7 @@ element-text, element-icon , mode-switcher {
 
 window {
     width: 600px;
+    height: 400px;
     padding: 24px;
     background-color: @darker-black;
     border: 2px;
