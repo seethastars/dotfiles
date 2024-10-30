@@ -13,38 +13,17 @@
     },
     "modules": [
         {
-            "type": "custom", // HardwareStart
-            "format": "┌─────────── \u001b[1mHardware Information\u001b[0m ───────────┐" // `\u001b` is `\033`, or `\e`
+            "type": "custom",
+            "key": " "
         },
         {
-            "type": "host",
-            "key": "  󰌢",
-            "keyColor": "red"
+            "type": "colors",
+            "paddingLeft": 2,
+            "symbol": "square"
         },
         {
-            "type": "cpu",
-            "key": "  ",
-            "keyColor": "green"
-        },
-        {
-            "type": "gpu",
-            "detectionMethod": "pci",
-            "key": "  ",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "display",
-            "key": "  󱄄",
-            "keyColor": "blue"
-        },
-        {
-            "type": "memory",
-            "key": "  ",
-            "keyColor": "magenta"
-        },
-        {
-            "type": "custom", // SoftwareStart
-            "format": "├─────────── \u001b[1mSoftware Information\u001b[0m ───────────┤"
+            "type": "custom",
+            "key": " "
         },
         {
             "type": "os",
@@ -62,19 +41,34 @@
             "key": "  ",
             "keyColor": "yellow"
         },
-        {
-            "type": "shell",
-            "key": "  ",
-            "keyColor": "blue"
-        },
 	      {
 	          "type": "packages",
 	          "key": "  ",
             "keyColor": "magenta"
         },
-	      {
+        {
             "type": "custom",
-            "format": "|────────────── \u001b[1mUptime / Age\u001b[0m ────────────────|"
+            "key": " "
+        },
+        {
+            "type": "cpu",
+            "key": "  ",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "detectionMethod": "pci",
+            "key": "  ",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "memory",
+            "key": "  ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "custom",
+            "key": " "
         },
         {
             "type": "command",
@@ -88,12 +82,12 @@
             "keyColor": "white"
         },
         {
-            "type": "custom", // InformationEnd
-            "format": "└────────────────────────────────────────────┘"
+            "type": "custom",
+            "key": " "
         },
         {
             "type": "colors",
-            "paddingLeft": 15,
+            "paddingLeft": 2,
             "symbol": "square"
         },
         {
@@ -102,7 +96,7 @@
         },
         {
             "type": "custom",
-            "format": "      See The Stars, Follow Your Dreams."
+            "format": "  See The Stars, Follow Your Dreams."
         }
     ]
 }
