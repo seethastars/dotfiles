@@ -86,18 +86,6 @@ window#waybar.empty #window {
     padding-right: 10px;
 }
 
-#memory {
-    color: @white;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#cpu {
-    color: @white;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 #pulseaudio {
     color: @white;
     padding-left: 10px;
