@@ -56,9 +56,3 @@ To install and set up the Hyprland dotfiles, follow these steps:
 </small>
 
 </div>
-
-## Contribuiting
-
-A huge thanks to Chris Titus Tech for everything that i've learned from him and for the "mybash" config that i used in my themes <3.
-
-![@ChrisTitusTech](https://github.com/ChrisTitusTech)
