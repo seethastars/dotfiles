@@ -8,9 +8,9 @@
 
 
   // --- Modules ---   
-	"modules-left": ["custom/arch", "hyprland/workspaces#cc2", "hyprland/window"],
-	"modules-center": ["clock"],
-	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
+	"modules-left": ["custom/arch", "hyprland/workspaces#cc2"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["tray", "pulseaudio", "battery", "clock", "custom/exit"],
   
   
   // --- Custom Stuff --- 
