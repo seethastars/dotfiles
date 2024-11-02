@@ -10,15 +10,22 @@
   // --- Modules ---   
 	"modules-left": ["custom/arch", "hyprland/workspaces#cc2", "hyprland/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
-  
-  
+	"modules-right": ["tray", "custom/cava", "pulseaudio", "battery", "custom/exit"],
+
+
   // --- Custom Stuff --- 
   "custom/arch": {
       "format": "{icon}",
       "format-icons": " ",
       "tooltip-format": "BTW",
       "on-click": "rofi -show drun"
+  },
+
+  "custom/cava": {
+      "exec": "~/.config/waybar/scripts/waybarCava.sh",
+      "format": "{}",
+      "on-click": "cmus-remote -u",
+      "tooltip": false
   },
 
   "custom/exit": {
@@ -163,7 +170,7 @@
 
   "battery": {
     "bat": "BAT1",
-    "interval": 60,
+    "interval": 30,
     "full-at": 100,
     "design-capacity": false,
     "states": {

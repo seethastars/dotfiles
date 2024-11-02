@@ -30,7 +30,7 @@ do
       echo -e "${YELLOW}Installing AUR packages...${RC}"
 
       # customize packages you want to install
-      paru -Syu hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent hyprpaper hyprlock hypridle hyprshot wl-clipboard waybar rofi-wayland foot starship swaync wlogout librewolf-bin nwg-look thunar thunar-archive-plugin gvfs gvfs-gphoto2 gvfs-afc xarchiver imagemagick ristretto pavucontrol brightnessctl unzip unrar p7zip mpv htop alsa-utils dosfstools ntfsprogs papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd adobe-source-han-sans-jp-fonts noto-fonts-emoji
+      paru -Syu hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent hyprpaper hyprlock hypridle hyprshot wl-clipboard waybar rofi-wayland foot starship swaync wlogout librewolf-bin nwg-look thunar thunar-archive-plugin gvfs gvfs-gphoto2 gvfs-afc xarchiver imagemagick ristretto pavucontrol brightnessctl unzip unrar p7zip mpv cmus cava htop alsa-utils dosfstools ntfsprogs papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd adobe-source-han-sans-jp-fonts noto-fonts-emoji
 
       echo -e "${GREEN}AUR packages installed.${RC}"
       
