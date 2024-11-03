@@ -33,6 +33,6 @@ alias vim='nvim'
 PS1='[\u@\h \W]\$ '
 
 # Fastfetch startup
-fastfetch
+#fastfetch
 
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
