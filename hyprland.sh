@@ -41,7 +41,7 @@ do
           exit 1
 
         elif [[ $resp == "Y" ]] || [[ $resp == "y" ]]; then
-          cd hyprchill/ && cp -r * ~/.config/ 
+          cd hyprstars/ && cp -r * ~/.config/ 
           echo -e "${GREEN}Config files copied, Enjoy Hyprland."
           exit 1
         fi

@@ -1,24 +1,32 @@
 {
   // --- General Config ---
 	"layer": "top",
-  "position": "top",
-	"height": 28,
-	"width": 1355,
-	"margin-top": 6,
+  "position": "left",
+	"height": 750,
+	"width": 30,
+	"margin-left": 5,
+  "margin-right": 0,
 
 
   // --- Modules ---   
 	"modules-left": ["custom/arch", "hyprland/workspaces#cc2"],
 	"modules-center": ["hyprland/window"],
 	"modules-right": ["tray", "pulseaudio", "battery", "clock", "custom/exit"],
-  
-  
+
+
   // --- Custom Stuff --- 
   "custom/arch": {
       "format": "{icon}",
-      "format-icons": " ",
+      "format-icons": "",
       "tooltip-format": "BTW",
       "on-click": "rofi -show drun"
+  },
+
+  "custom/cava": {
+      "exec": "~/.config/waybar/scripts/waybarCava.sh",
+      "format": "{}",
+      "on-click": "cmus-remote -u",
+      "tooltip": false
   },
 
   "custom/exit": {
@@ -138,7 +146,8 @@
   "hyprland/window": {
       "format": "{class}",
       "max-length": 20,
-      "separate-outputs": true
+      "separate-outputs": true,
+      "rotate": 90
   },
 
 	"tray": {
@@ -148,8 +157,8 @@
 
   "pulseaudio": {
 		  "scroll-step": 5,
-		  "format": "{icon} {volume}%",
-      "format-muted": "  muted",
+		  "format": "{icon}",
+      "format-muted": " ",
 		  "format-icons": {
 			"default": [" ", " ", " "],
       "headphone": " "
@@ -159,11 +168,13 @@
     "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
     "smooth-scrolling-threshold": 1,
+    "tooltip": true,
+    "tooltip-format": "{volume}%"
 	},
 
   "battery": {
     "bat": "BAT1",
-    "interval": 60,
+    "interval": 30,
     "full-at": 100,
     "design-capacity": false,
     "states": {
@@ -171,21 +182,21 @@
       "warning": 30,
       "critical": 10
     },
-    "format": "{icon}  {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-full": "{icon}  Full",
-    "format-alt": "{icon} {time}",
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    "format-full": "{icon}\nFull",
+    "format-alt": "{icon}\n{time}",
     "format-icons": ["", "", "", "", ""],
     "format-time": " {H}h {M}min",
     "tooltip": true,
-    "tooltip-format": "{timeTo} {power}w",
+    "tooltip-format": "{capacity}%\n{timeTo}\n{power}w",
   },
 
   "clock": {
-      "format": "󰥔 {:%H:%M %p}",
-      "format-alt": "󰃭 {:%a %d %b}",
-      "tooltip": false,
+      "format": "{:%H\n%M}",
+      "tooltip": true,
+      "tooltip-format": "{:%d-%m-%y}",
       "actions": {
       "on-click-right": "mode",
       },
