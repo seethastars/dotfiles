@@ -1,0 +1,114 @@
+{
+  // --- General Config ---
+	"layer": "top",
+  "position": "top",
+	"height": 28,
+	"width": 1355,
+	"margin-top": 6,
+
+
+  // --- Modules ---   
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": [],
+	"modules-right": ["clock"],
+
+
+
+  // --- Workspaces Styles ---
+
+  // Numbers Style
+	"hyprland/workspaces": {
+		  "format": "{icon}",
+		  "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+		  "persistent-workspaces": {
+        "1": [],
+		    "2": [],
+		    "3": [],
+        "4": [],
+        "5": [],
+		  },
+      "format-icons": {
+		    "1": "1",
+		    "2": "2",
+		    "3": "3",
+		    "4": "4",
+		    "5": "5",
+		    "6": "6",
+		    "7": "7",
+		    "8": "8",
+		    "9": "9",
+		    "10": "10",
+	    },
+		  //"sort-by-number": true
+	},
+
+  // Circles Style #2
+  "hyprland/workspaces#cc2": {
+	    "active-only": false,
+	    "all-outputs": true,
+	    "format": "{icon}",
+	    "show-special": false,
+	    "on-click": "activate",
+	    "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+	    "persistent-workspaces": {
+		      "1": [],
+		      "2": [],
+		      "3": [],
+		      "4": [],
+		      "5": [],
+	    },
+	    "format-icons": {
+		  "active": "",
+		  "default": "",
+	    },
+  },
+
+  "pulseaudio": {
+		  "scroll-step": 5,
+		  "format": "vol: {volume}%",
+      "format-muted": "vol: muted",
+		  "format-icons": {
+			"default": [" ", " ", " "],
+      "headphone": " "
+		},
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol -t 3",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+    "smooth-scrolling-threshold": 1,
+	},
+
+  "battery": {
+    "bat": "BAT1",
+    "interval": 30,
+    "full-at": 100,
+    "design-capacity": false,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 10
+    },
+    "format": "bat: {capacity}%",
+    "format-charging": "charging: {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-full": "bat: full",
+    "format-alt": "{time}",
+    "format-icons": ["", "", "", "", ""],
+    "format-time": " {H}h {M}min",
+    "tooltip": true,
+    "tooltip-format": "{timeTo} {power}w",
+  },
+
+  "clock": {
+      "format": "{:%H:%M}",
+      "format-alt": "{:%a %d %b}",
+      "tooltip": false,
+      "actions": {
+      "on-click-right": "mode",
+      },
+      "interval": 1
+  },
+}

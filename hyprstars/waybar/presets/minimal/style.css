@@ -1,0 +1,84 @@
+/* --- General Config --- */ 
+* {
+	  font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
+	  font-weight: bold;
+	  font-size: 14px;
+	  min-height: 10px;
+    border: none;
+}
+
+
+/* --- See The Stars Colorscheme --- */
+
+@define-color black     #111213;
+@define-color grey      #848884;
+@define-color white     #f2f3f4;
+
+@define-color red       #e67e80;
+@define-color orange    #e69875;
+@define-color yellow    #FFFF8F;
+@define-color green     #83c092;
+@define-color blue      #7fbbb3;
+@define-color purple    #CF9FFF;
+
+
+/* --- Waybar General Config --- */
+window#waybar {
+	  color: rgba(53, 185, 171, 1);
+    background-color: rgba(17, 18, 19, 1);
+    border-radius: 10px;
+}
+
+
+/* --- Custom Stuff --- */
+
+/* no custom stuff, minimal config.*/
+
+#workspaces {
+    padding-left: 0px;
+}
+
+#workspaces button {
+    color: @grey;
+    padding-left: 8px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.focused {
+    color: @white;
+    transition: all 0.3s ease;
+    animation: colored-gradient 10s ease infinite;
+}
+
+#workspaces button:hover {
+    color: @white;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+#workspaces button.active {
+    color: @black;
+    background-color: @grey;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    animation: colored-gradient 10s ease infinite;
+}
+
+#pulseaudio {
+    color: @white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#battery {
+    color: @white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    color: @white;
+    padding-left: 10px;
+    padding-right: 15px;
+}
