@@ -2,6 +2,8 @@
 
 ![image](assets/clean.png)
 
+![image](assets/clean2.png)
+
 </div>
 
 <!-- Installation Instructions -->
