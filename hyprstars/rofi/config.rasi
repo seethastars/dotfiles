@@ -1,59 +1,105 @@
-* {
-	font: "JetBrains Nerd Font Mono Regular 12";
+// vim:ft=rasi
+configuration {
+  modi:                 "drun,run,filebrowser,window";
+  dpi:                  90;
+  show-icons:           true;
+  icon-theme:           "Papirus";
+  terminal:             "foot";
+  window-format:        "{w} · {c} · {t}";
+  disable-history:      false;
+  max-history-size:     50;
+
+  display-drun:         " Apps"; // 󰀻
+  display-run:          " Runs";
+  display-nerdy:        "󰱨 Nerdy";
+  display-emoji:        "󰱨 Emoji";
+	display-window:       " Windows";
+  display-filebrowser:  " Files";
+	display-ssh:          "󰣀 SSH";
+	display-keys:         " Keys";
+
+  filebrowser {
+    directory: "/home/seethestars/";
+  }
 }
 
-configuration {
-	show-icons: true;
-}
+@import "colors"
 
 window {
-	location: center;
-	width: 600px;
-	height: 500px;
-	padding: 50px;
-	border-radius: 7px;
-	border: 2px solid;
+  /*Removing height make the window height equal to num of opts*/
+  /*height: 40%;*/
+  width: 40%;
+  orientation: vertical;
+  location: center;
+  anchor: center;
+  x-offset: 0px;
+  y-offset: 0px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px;
+  border-radius: 5px;
+  spacing: 0px;
+  children: [ mainbox ];
 }
 
 mainbox {
-	enabled: true;
-	spacing: 40px;
-	padding: 0px;
-	children: ["inputbar", "listview"];
+  spacing: 5px;
+  children: [ inputbar, mode-switcher, listview ];
 }
 
 inputbar {
-	border: 1px solid;
-	border-radius: 7px;
+  spacing: 3px;
+  /*padding: top right bottom left*/
+  padding: 0px;
+  children: [ "textbox-prompt-colon", entry ];
+}
 
-	padding: 10px;
-	margin: 0 150px;
+prompt {
+  padding: 3px;
+  border-radius: 5px;
+}
 
-	children: ["entry"];
+textbox-prompt-colon {
+  expand: false;
+  padding: 3px 15px;
+  border-radius: 5px;
+  str: " "; /* */
 }
 
 entry {
-	placeholder: "Search";
+  placeholder:  "Search...";
+  padding: 0px;
+  border-radius: 5px;
+}
+
+mode-switcher {
+  spacing: 3px;
+  orientation: horizontal;
+}
+
+button {
+  padding: 3px;
+  border-radius: 5px;
 }
 
 listview {
-	columns: 2;
-	border: 0px solid;
-	spacing: 10px;
-	fixed-columns: true;
-	layout: vertical;
-	scrollbar: false;
-	dynamic: true;
+  lines: 7;
+  spacing: 3px;
+  scrollbar: false;
+  cycle: false;
+  dynamic: false;
+  fixed-height: false;
+  spacing: 0px;
+  /* List view has the dash border, Remove it here */
+  /*border: 0px;*/
+  margin: 0px;
+  padding: 5px;
+  border: 1px;
+  border-radius: 5px;
 }
 
 element {
-	spacing: 10px;
-	padding: 10px;
-	border: 0px solid;
-	border-radius: 7px;
-	children: ["element-icon", "element-text"];
-}
-
-element selected.normal {
-	border: 1px solid;
+  border: 0px;
+  border-radius: 5px;
+  padding: 3px;
 }
