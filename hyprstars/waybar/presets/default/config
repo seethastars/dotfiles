@@ -8,24 +8,17 @@
 
 
   // --- Modules ---   
-	"modules-left": ["custom/arch", "hyprland/workspaces#cc2", "hyprland/window"],
+	"modules-left": ["custom/menu", "hyprland/workspaces#cc", "hyprland/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "custom/cava", "pulseaudio", "battery", "custom/exit"],
+	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
 
 
   // --- Custom Stuff --- 
-  "custom/arch": {
+  "custom/menu": {
       "format": "{icon}",
       "format-icons": " ",
-      "tooltip-format": "BTW",
+      "tooltip-format": "Rofi",
       "on-click": "rofi -show drun"
-  },
-
-  "custom/cava": {
-      "exec": "~/.config/waybar/scripts/waybarCava.sh",
-      "format": "{}",
-      "on-click": "cmus-remote -u",
-      "tooltip": false
   },
 
   "custom/exit": {
@@ -72,28 +65,6 @@
 
   // Circles Style
   "hyprland/workspaces#cc": {
-	    "active-only": false,
-	    "all-outputs": true,
-	    "format": "{icon}",
-	    "show-special": false,
-	    "on-click": "activate",
-	    "on-scroll-up": "hyprctl dispatch workspace e+1",
-	    "on-scroll-down": "hyprctl dispatch workspace e-1",
-	    "persistent-workspaces": {
-		      "1": [],
-		      "2": [],
-		      "3": [],
-		      "4": [],
-		      "5": [],
-	    },
-	    "format-icons": {
-		  "active": "",
-		  "default": "",
-	    },
-  },
-
-  // Circles Style #2
-  "hyprland/workspaces#cc2": {
 	    "active-only": false,
 	    "all-outputs": true,
 	    "format": "{icon}",
@@ -170,7 +141,7 @@
 
   "battery": {
     "bat": "BAT1",
-    "interval": 30,
+    "interval": 10,
     "full-at": 100,
     "design-capacity": false,
     "states": {
@@ -178,13 +149,13 @@
       "warning": 30,
       "critical": 10
     },
-    "format": "{icon}  {capacity}%",
-    "format-charging": " {capacity}%",
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
     "format-plugged": " {capacity}%",
-    "format-full": "{icon}  Full",
+    "format-full": "{icon} Full",
     "format-alt": "{icon} {time}",
-    "format-icons": ["", "", "", "", ""],
-    "format-time": " {H}h {M}min",
+    "format-icons": ["󰂃", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-time": "{H}h {M}min",
     "tooltip": true,
     "tooltip-format": "{timeTo} {power}w",
   },

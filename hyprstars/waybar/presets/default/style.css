@@ -33,15 +33,9 @@ window#waybar {
 
 
 /* --- Custom Stuff --- */
-#custom-arch {
+#custom-menu {
     color: @white;
     padding-left: 10px;
-}
-
-#custom-cava {
-    color: @white;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #custom-exit {

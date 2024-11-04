@@ -26,11 +26,17 @@
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
     background-color: rgba(17, 18, 19, 1);
-    border-radius: 10px;
+    border-radius: 7px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 
 /* --- Custom Stuff --- */
+#custom-menu {
+    color: @white;
+    padding-left: 10px;
+}
 
 #custom-exit {
     color: @red;
@@ -38,13 +44,28 @@ window#waybar {
     padding-right: 17px;
 }
 
+#custom-separator {
+    color: @white;
+}
+
+
+#window {
+	  color: @white;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: 0px;
+}
+
 #workspaces {
-    padding-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #workspaces button {
     color: @grey;
-    padding-left: 8px;
+    padding-left: 3px;
     transition: all 0.3s ease;
 }
 
@@ -56,17 +77,21 @@ window#waybar {
 
 #workspaces button:hover {
     color: @white;
-    border-radius: 0px;
+    border-radius: 20px;
     transition: all 0.3s ease;
     box-shadow: inherit;
     text-shadow: inherit;
 }
 #workspaces button.active {
-    color: @black;
-    background-color: @grey;
-    border-radius: 8px;
+    color: @white;
+    border-radius: 20px;
     transition: all 0.3s ease;
     animation: colored-gradient 10s ease infinite;
+}
+
+#tray {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #pulseaudio {
