@@ -43,7 +43,7 @@ do
         elif [[ $resp == "Y" ]] || [[ $resp == "y" ]]; then
           cd hyprstars/ && cp -r * ~/.config/ 
           cd .. && mkdir ~/Pictures && mv Wallpapers/ ~/Pictures/
-          mv bashrc .bashrc && cp -r .bashrc ~/
+          cp -r .bashrc ~/
           echo -e "${GREEN}Config files copied, Enjoy Hyprland."
           exit 1
         fi
