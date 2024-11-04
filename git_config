@@ -1,0 +1,8 @@
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+cat .ssh/key/pub
+
+git remote set-url "origin" git@github.com:User/UserRepo.git
+
+git config --global user.name "abc"
+git config --global user.email "abc@example.com"
