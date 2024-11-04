@@ -1,6 +1,6 @@
 <div align="center">
 
-![image](assets/hyprchill.png)
+![image](assets/clean.png)
 
 </div>
 
@@ -43,7 +43,7 @@ To install and set up the Hyprland dotfiles, follow these steps:
 | `Super + Q`             | Close Window                                     |
 | `Super + W`             | Open Web Browser - (Librewolf)                   |
 | `Super + E`             | Open File Manager - (Thunar)                     |
-| `Super + R`             | Open App Launcher - (Wofi)                       |
+| `Super + R`             | Open App Launcher - (Rofi)                       |
 | `Super + L`             | Exec lockscreen - (Hyprlock)                     |
 | `Super + B`             | Restart Waybar                                   |
 | `Super + N`             | Change Wallpaper                                 |
