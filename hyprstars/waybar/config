@@ -24,7 +24,8 @@
   "custom/exit": {
       "format": "",
       "on-click": "wlogout",
-      "tooltip": false
+      "tooltip": true,
+      "tooltip-format": "Power Menu"
   },
 
   "custom/separator": {
@@ -130,7 +131,7 @@
       "format-muted": "  muted",
 		  "format-icons": {
 			"default": [" ", " ", " "],
-      "headphone": " "
+      "headphone": " ",
 		},
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-click-right": "pavucontrol -t 3",

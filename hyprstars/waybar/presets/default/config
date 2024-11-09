@@ -24,7 +24,8 @@
   "custom/exit": {
       "format": "",
       "on-click": "wlogout",
-      "tooltip": false
+      "tooltip": true,
+      "tooltip-format": "Power Menu"
   },
 
   "custom/separator": {

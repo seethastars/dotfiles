@@ -10,7 +10,7 @@
 
 /* --- See The Stars Colorscheme --- */
 
-@define-color black     #111213;
+@define-color black     #171819;
 @define-color grey      #848884;
 @define-color white     #f2f3f4;
 
@@ -26,34 +26,25 @@
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
     background-color: rgba(17, 18, 19, 0);
-    border-radius: 10px;
+    border-radius: 7px;
     margin-right: 5px;
     margin-left: 5px;
 }
 
 
 /* --- Custom Stuff --- */
-#custom-arch {
+#custom-menu {
     color: @white;
     background-color: @black;
-    border-radius: 10px;
-    padding-right: 7px;
-}
-
-#custom-cava {
-    color: @white;
-    background-color: @black;
-    border-radius: 10px;
+    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 #custom-exit {
     color: @red;
     background-color: @black;
-    border-radius: 10px;
+    border-radius: 7px;
     padding-left: 10px;
     padding-right: 17px;
 }
@@ -66,8 +57,7 @@ window#waybar {
 #window {
 	  color: @white;
     background-color: @black;
-    border-radius: 10px;
-    padding-right: 7px;
+    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -79,8 +69,7 @@ window#waybar.empty #window {
 
 #workspaces {
     background-color: @black;
-    border-radius: 10px;
-    padding-right: 7px;
+    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 5px;
@@ -115,15 +104,15 @@ window#waybar.empty #window {
 
 #tray {
     background-color: @black;
-    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 10px;
 }
 
 #pulseaudio {
     color: @white;
     background-color: @black;
-    border-radius: 10px;
+    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -131,7 +120,7 @@ window#waybar.empty #window {
 #battery {
     color: @white;
     background-color: @black;
-    border-radius: 10px;
+    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 5px;
@@ -141,5 +130,7 @@ window#waybar.empty #window {
 #clock {
     color: @white;
     background-color: @black;
-    border-radius: 10px;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
