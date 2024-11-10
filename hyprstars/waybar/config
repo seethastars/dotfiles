@@ -8,9 +8,9 @@
 
 
   // --- Modules ---   
-	"modules-left": ["custom/menu", "hyprland/workspaces#cc"],
-	"modules-center": ["clock"],
-	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
+	"modules-left": ["hyprland/workspaces#cc"],
+	"modules-center": [],
+	"modules-right": ["clock"],
 
 
   // --- Custom Stuff --- 
@@ -162,8 +162,8 @@
   },
 
   "clock": {
-      "format": "󰥔 {:%H:%M %p}",
-      "format-alt": "󰃭 {:%a %d %b}",
+      "format": "{:%H:%M}",
+      "format-alt": "{:%a %d %b}",
       "tooltip": false,
       "actions": {
       "on-click-right": "mode",
