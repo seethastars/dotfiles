@@ -1,6 +1,6 @@
 // vim:ft=rasi
 configuration {
-  modi:                 "drun,run,filebrowser,window";
+  modi:                 "drun,filebrowser,window";
   dpi:                  90;
   show-icons:           true;
   icon-theme:           "Papirus";
@@ -10,13 +10,8 @@ configuration {
   max-history-size:     50;
 
   display-drun:         " Apps"; // 󰀻
-  display-run:          " Runs";
-  display-nerdy:        "󰱨 Nerdy";
-  display-emoji:        "󰱨 Emoji";
 	display-window:       " Windows";
   display-filebrowser:  " Files";
-	display-ssh:          "󰣀 SSH";
-	display-keys:         " Keys";
 
   filebrowser {
     directory: "/home/seethestars/";
@@ -36,8 +31,8 @@ window {
   y-offset: 0px;
   margin: 5px;
   padding: 5px;
-  border: 2px;
-  border-radius: 5px;
+  border: 0px;
+  border-radius: 10px;
   spacing: 0px;
   children: [ mainbox ];
 }
@@ -94,7 +89,7 @@ listview {
   /*border: 0px;*/
   margin: 0px;
   padding: 5px;
-  border: 1px;
+  border: 0px;
   border-radius: 5px;
 }
 

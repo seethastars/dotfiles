@@ -8,7 +8,7 @@
 
 
   // --- Modules ---   
-	"modules-left": ["custom/menu", "hyprland/workspaces#cc", "hyprland/window"],
+	"modules-left": ["custom/menu", "hyprland/workspaces#cc"],
 	"modules-center": ["clock"],
 	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
 
