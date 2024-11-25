@@ -44,9 +44,8 @@ To install and set up the Hyprland dotfiles, follow these steps:
 | `Super + W`             | Open Web Browser - (Librewolf)                   |
 | `Super + E`             | Open File Manager - (Thunar)                     |
 | `Super + R`             | Open App Launcher - (Rofi)                       |
-| `Super + L`             | Exec lockscreen - (Hyprlock)                     |
+| `Super + L`             | Exec logout - (wlogout)                          |
 | `Super + B`             | Restart Waybar                                   |
-| `Super + N`             | Change Wallpaper                                 |
 | `Super + M`             | Exit Hyprland                                    |
 
 <small>
