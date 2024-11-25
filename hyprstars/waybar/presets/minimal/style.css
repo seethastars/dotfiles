@@ -10,7 +10,7 @@
 
 /* --- See The Stars Colorscheme --- */
 
-@define-color black     #171819;
+@define-color black     #111213;
 @define-color grey      #848884;
 @define-color white     #f2f3f4;
 
@@ -26,7 +26,7 @@
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
     background-color: rgba(17, 18, 19, 0);
-    border-radius: 7px;
+    border-radius: 0px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -35,32 +35,37 @@ window#waybar {
 /* --- Custom Stuff --- */
 #custom-menu {
     color: @white;
-    background-color: @black;
-    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #custom-exit {
     color: @red;
-    background-color: @black;
-    border-radius: 7px;
     padding-left: 10px;
     padding-right: 17px;
-}
-
-#custom-separator {
-    color: @white;
 }
 
 
 #window {
 	  color: @white;
-    background-color: @black;
-    border-radius: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
+
+
+.modules-left {
+    background-color: @black;
+    border-radius: 0px;
+}
+
+.modules-center {
+    background-color: @black;
+    border-radius: 0px;
+}
+
+.modules-right {
+    background-color: @black;
+    border-radius: 0px;
+}
+
 
 window#waybar.empty #window {
     background-color: transparent;
@@ -68,17 +73,12 @@ window#waybar.empty #window {
 }
 
 #workspaces {
-    background-color: @black;
-    border-radius: 7px;
     padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 #workspaces button {
     color: @grey;
-    padding-left: 3px;
+    padding-left: 5px;
     transition: all 0.3s ease;
 }
 
@@ -90,47 +90,37 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
     color: @white;
-    border-radius: 20px;
+    border-radius: 0px;
     transition: all 0.3s ease;
     box-shadow: inherit;
     text-shadow: inherit;
 }
 #workspaces button.active {
     color: @white;
-    border-radius: 20px;
+    border-radius: 0px;
     transition: all 0.3s ease;
     animation: colored-gradient 10s ease infinite;
 }
 
 #tray {
-    background-color: @black;
     padding-left: 10px;
     padding-right: 10px;
-    margin-right: 10px;
 }
 
 #pulseaudio {
     color: @white;
-    background-color: @black;
-    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #battery {
     color: @white;
-    background-color: @black;
-    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 #clock {
     color: @white;
-    background-color: @black;
-    border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
 }

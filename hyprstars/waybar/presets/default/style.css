@@ -25,8 +25,8 @@
 /* --- Waybar General Config --- */
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
-    background-color: rgba(17, 18, 19, 1);
-    border-radius: 7px;
+    background-color: rgba(17, 18, 19, 0);
+    border-radius: 0px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -52,6 +52,23 @@ window#waybar {
 #window {
 	  color: @white;
 }
+
+
+.modules-left {
+    background-color: @black;
+    border-radius: 0px;
+}
+
+.modules-center {
+    background-color: @black;
+    border-radius: 0px;
+}
+
+.modules-right {
+    background-color: @black;
+    border-radius: 0px;
+}
+
 
 window#waybar.empty #window {
     background-color: transparent;

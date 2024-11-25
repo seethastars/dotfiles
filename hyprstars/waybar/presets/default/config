@@ -8,7 +8,7 @@
 
 
   // --- Modules ---   
-	"modules-left": ["custom/menu", "hyprland/workspaces#cc", "hyprland/window"],
+	"modules-left": ["custom/menu", "hyprland/workspaces#cc"],
 	"modules-center": ["clock"],
 	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
 
@@ -86,34 +86,6 @@
 	    },
   },
 
-  // Japanese Style
-	"hyprland/workspaces#jp": {
-		  "format": "{icon}",
-		  "on-click": "activate",
-      "on-scroll-up": "hyprctl dispatch workspace e+1",
-	    "on-scroll-down": "hyprctl dispatch workspace e-1",
-		  "persistent-workspaces": {
-        "1": [],
-		    "2": [],
-		    "3": [],
-        "4": [],
-        "5": [],
-		  },
-      "format-icons": {
-		    "1": "一",
-		    "2": "二",
-		    "3": "三",
-		    "4": "四",
-		    "5": "五",
-		    "6": "六",
-		    "7": "七",
-		    "8": "八",
-		    "9": "九",
-		    "10": "十",
-	    },
-		  //"sort-by-number": true
-	},
-
   "hyprland/window": {
       "format": "{class}",
       "max-length": 20,
@@ -131,7 +103,7 @@
       "format-muted": "  muted",
 		  "format-icons": {
 			"default": [" ", " ", " "],
-      "headphone": " "
+      "headphone": " ",
 		},
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-click-right": "pavucontrol -t 3",
@@ -162,7 +134,7 @@
   },
 
   "clock": {
-      "format": "󰥔 {:%H:%M %p}",
+      "format": "󰥔 {:%H:%M}",
       "format-alt": "󰃭 {:%a %d %b}",
       "tooltip": false,
       "actions": {
