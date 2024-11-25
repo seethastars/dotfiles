@@ -34,20 +34,12 @@ do
 
       echo -e "${GREEN}AUR packages installed.${RC}"
       
-      read -p "Do you want to copy the config files? (Y/n) "
-        
-        if [[ $resp == "N" ]] || [[ $resp == "n" ]]; then 
-          echo -e "${BLUE}Enjoy Hyprland.${RC}"
-          exit 1
+      cd hyprstars/ && cp -r * ~/.config/ 
+      cd .. && mkdir ~/Pictures && mv Wallpapers/ ~/Pictures/
+      cp -r .bashrc ~/
+      echo -e "${GREEN}Enjoy Hyprland."
+      exit 1
 
-        elif [[ $resp == "Y" ]] || [[ $resp == "y" ]]; then
-          cd hyprstars/ && cp -r * ~/.config/ 
-          cd .. && mkdir ~/Pictures && mv Wallpapers/ ~/Pictures/
-          cp -r .bashrc ~/
-          echo -e "${GREEN}Config files copied, Enjoy Hyprland."
-          exit 1
-        fi
-    else
       echo -e "${RED}Please type Y for confirm or N for decling (^C to quit.)${RC}"
     fi 
 done
