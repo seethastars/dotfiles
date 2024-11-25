@@ -1,8 +1,6 @@
 <div align="center">
 
-![image](assets/clean.png)
-
-![image](assets/clean2.png)
+![image](.assets/desktop.png)
 
 </div>
 
