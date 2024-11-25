@@ -34,7 +34,7 @@ do
 
       echo -e "${GREEN}AUR packages installed.${RC}"
       
-      cd hyprstars/ && cp -r * ~/.config/ 
+      cd dotconfig/ && cp -r * ~/.config/ 
       cd .. && mkdir ~/Pictures && mv Wallpapers/ ~/Pictures/
       cp -r .bashrc ~/
       echo -e "${GREEN}Enjoy Hyprland."
