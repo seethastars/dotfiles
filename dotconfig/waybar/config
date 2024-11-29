@@ -2,32 +2,18 @@
   // --- General Config ---
 	"layer": "top",
   "position": "top",
-	"height": 28,
+	"height": 20,
 	"width": 1355,
 	"margin-top": 6,
 
 
   // --- Modules ---   
-	"modules-left": ["custom/menu", "hyprland/workspaces#cc"],
-	"modules-center": ["clock"],
-	"modules-right": ["tray", "pulseaudio", "battery", "custom/exit"],
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": [],
+	"modules-right": ["tray", "custom/separator", "pulseaudio", "battery", "custom/separator", "clock"],
 
 
   // --- Custom Stuff --- 
-  "custom/menu": {
-      "format": "{icon}",
-      "format-icons": " ",
-      "tooltip-format": "Rofi",
-      "on-click": "rofi -show drun"
-  },
-
-  "custom/exit": {
-      "format": "",
-      "on-click": "wlogout",
-      "tooltip": true,
-      "tooltip-format": "Power Menu"
-  },
-
   "custom/separator": {
       "format": "{icon}",
       "format-icons": "|",
@@ -46,8 +32,6 @@
         "1": [],
 		    "2": [],
 		    "3": [],
-        "4": [],
-        "5": [],
 		  },
       "format-icons": {
 		    "1": "1",
@@ -99,8 +83,8 @@
 
   "pulseaudio": {
 		  "scroll-step": 5,
-		  "format": "{icon} {volume}%",
-      "format-muted": "  muted",
+		  "format": "vol: {volume}%",
+      "format-muted": "vol: muted",
 		  "format-icons": {
 			"default": [" ", " ", " "],
       "headphone": " ",
@@ -122,11 +106,11 @@
       "warning": 30,
       "critical": 10
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-full": "{icon} Full",
-    "format-alt": "{icon} {time}",
+    "format": "bat: {capacity}%",
+    "format-charging": "bat: {capacity}%",
+    "format-plugged": "bat: {capacity}%",
+    "format-full": "bat: full",
+    "format-alt": "bat: {time}",
     "format-icons": ["󰂃", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-time": "{H}h {M}min",
     "tooltip": true,
@@ -134,8 +118,7 @@
   },
 
   "clock": {
-      "format": "󰥔 {:%H:%M}",
-      "format-alt": "󰃭 {:%a %d %b}",
+      "format": "{:%A %d %B, %H:%M %p}",
       "tooltip": false,
       "actions": {
       "on-click-right": "mode",

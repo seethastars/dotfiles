@@ -2,7 +2,7 @@
 * {
 	  font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
 	  font-weight: bold;
-	  font-size: 14px;
+	  font-size: 13px;
 	  min-height: 10px;
     border: none;
 }
@@ -25,7 +25,7 @@
 /* --- Waybar General Config --- */
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
-    background-color: rgba(17, 18, 19, 0);
+    background-color: rgba(17, 18, 19, 1);
     border-radius: 0px;
     margin-right: 5px;
     margin-left: 5px;
@@ -38,14 +38,9 @@ window#waybar {
     padding-left: 10px;
 }
 
-#custom-exit {
-    color: @red;
-    padding-left: 10px;
-    padding-right: 17px;
-}
 
 #custom-separator {
-    color: @white;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -54,21 +49,6 @@ window#waybar {
 }
 
 
-.modules-left {
-    background-color: @black;
-    border-radius: 0px;
-}
-
-.modules-center {
-    background-color: @black;
-    border-radius: 0px;
-}
-
-.modules-right {
-    background-color: @black;
-    border-radius: 0px;
-}
-
 
 window#waybar.empty #window {
     background-color: transparent;
@@ -76,32 +56,32 @@ window#waybar.empty #window {
 }
 
 #workspaces {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
 }
 
 #workspaces button {
     color: @grey;
-    padding-left: 3px;
+    padding-left: 10px;
     transition: all 0.3s ease;
 }
 
 #workspaces button.focused {
     color: @white;
+    border-radius: 0px;
     transition: all 0.3s ease;
     animation: colored-gradient 10s ease infinite;
 }
 
 #workspaces button:hover {
     color: @white;
-    border-radius: 20px;
+    border-radius: 0px;
     transition: all 0.3s ease;
     box-shadow: inherit;
     text-shadow: inherit;
 }
 #workspaces button.active {
     color: @white;
-    border-radius: 20px;
+    border-radius: 0px;
     transition: all 0.3s ease;
     animation: colored-gradient 10s ease infinite;
 }
