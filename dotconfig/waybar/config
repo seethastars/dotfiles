@@ -8,9 +8,9 @@
 
 
   // --- Modules ---   
-	"modules-left": ["hyprland/workspaces"],
+	"modules-left": ["hyprland/workspaces", "mpris"],
 	"modules-center": [],
-	"modules-right": ["tray", "custom/separator", "pulseaudio", "battery", "custom/separator", "clock"],
+	"modules-right": ["tray", "pulseaudio", "battery", "custom/separator", "clock"],
 
 
   // --- Custom Stuff --- 
@@ -68,6 +68,22 @@
 		  "active": "",
 		  "default": "",
 	    },
+  },
+
+  "mpris": {
+	"format": "{status_icon} {artist} - {title} [{position} - {length}]",
+	"format-paused": "{status_icon} <i>{artist} - {title} [{position} - {length}]</i>",
+	"player-icons": {
+		  "default": "▶",
+		  "mpv": "🎵",
+      "vlc": "󰕼 "
+	  },
+	  "status-icons": {
+		  "paused": "▶",
+      "playing": "󰏤"
+	  },
+    "interval": 1,
+	  "ignored-players": ["librewolf"]
   },
 
   "hyprland/window": {
