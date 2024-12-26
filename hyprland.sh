@@ -24,7 +24,8 @@ do
       git clone https://aur.archlinux.org/paru-bin.git
       cd paru-bin/
       makepkg -si
-      cd .. & rm -rf paru-bin/
+      cd .. 
+      rm -rf paru-bin/
       echo -e "${GREEN}AUR helper installed.${RC}"
 
       echo -e "${YELLOW}Installing packages...${RC}"
