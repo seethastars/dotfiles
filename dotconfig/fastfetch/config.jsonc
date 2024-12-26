@@ -66,11 +66,6 @@
             "key": "  ",
             "keyColor": "magenta"
         },
-	{
-	    "type": "battery",
-	    "key": "  ba",
-	    "keyColor": "white"
-	},
         {
             "type": "custom",
             "key": " "
@@ -84,6 +79,11 @@
         {
             "type": "uptime",
             "key": "  Uptime",
+            "keyColor": "white"
+        },
+        {
+            "type": "battery",
+            "key": "  Battery",
             "keyColor": "white"
         },
         {
