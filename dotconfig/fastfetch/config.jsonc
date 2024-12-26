@@ -82,11 +82,6 @@
             "keyColor": "white"
         },
         {
-            "type": "battery",
-            "key": "  Battery",
-            "keyColor": "white"
-        },
-        {
             "type": "custom",
             "key": " "
         },
