@@ -33,6 +33,11 @@ window#waybar {
 
 
 /* --- Custom Stuff --- */
+#custom-menu {
+    color: @white;
+    padding-left: 10px;
+}
+
 .modules-right {
     background-color: @black;
     border-radius: 10px;
@@ -50,7 +55,6 @@ window#waybar {
     padding-right: 10px;
     margin-left: 7px;
 }
-
 
 #window {
 	  color: @white;

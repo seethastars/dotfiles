@@ -83,7 +83,7 @@
       "playing": "󰏤"
 	  },
     "interval": 1,
-	  "ignored-players": ["firefox"]
+	  "ignored-players": ["librewolf"]
   },
 
   "hyprland/window": {
