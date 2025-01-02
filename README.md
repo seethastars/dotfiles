@@ -32,26 +32,3 @@ To install and set up the Hyprland dotfiles, follow these steps:
     ```sh
     ./hyprland.sh
     ```
-
-## Keybinds
-
-<div align="center">
-
-| Mapping                 | Action                                           |
-| ----------------------- | ------------------------------------------------ |
-| `Super + Return`        | Open Terminal (Foot)                             |
-| `Super + Q`             | Close Window                                     |
-| `Super + W`             | Open Web Browser - (Librewolf)                   |
-| `Super + E`             | Open File Manager - (Thunar)                     |
-| `Super + R`             | Open App Launcher - (Rofi)                       |
-| `Super + L`             | Exec lockscreen - (Hyprlock)                     |
-| `Super + B`             | Restart Waybar                                   |
-| `Super + M`             | Exit Hyprland                                    |
-
-<small>
-
-**Note:** The hyprland dots are **Work in Progress** (WIP).
-
-</small>
-
-</div>
