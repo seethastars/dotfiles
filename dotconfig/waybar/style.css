@@ -42,6 +42,12 @@ window#waybar {
     color: rgba(255, 255, 255, 0.3);
 }
 
+#custom-power {
+    color: @red;
+    padding-left: 7px;
+    padding-right: 15px;
+}
+
 #mpris {
     color: @white;
     background-color: @black;
@@ -52,11 +58,10 @@ window#waybar {
 }
 
 
+
 #window {
 	  color: @white;
 }
-
-
 
 window#waybar.empty #window {
     background-color: transparent;
@@ -66,33 +71,23 @@ window#waybar.empty #window {
 #workspaces {
     background-color: @black;
     border-radius: 10px;
-    padding-left: 0px;
 }
 
 #workspaces button {
     color: @grey;
-    padding-left: 10px;
+    padding-left: 5px;
+    padding-right: 8px;
     transition: all 0.3s ease;
-}
-
-#workspaces button.focused {
-    color: @white;
-    border-radius: 0px;
-    transition: all 0.3s ease;
-    animation: colored-gradient 10s ease infinite;
 }
 
 #workspaces button:hover {
     color: @white;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: all 0.3s ease;
-    box-shadow: inherit;
-    text-shadow: inherit;
 }
+
 #workspaces button.active {
     color: @white;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
     transition: all 0.3s ease;
     animation: colored-gradient 10s ease infinite;
 }
