@@ -23,9 +23,7 @@ case $chosen in
   systemctl reboot
   ;;
 "$lock")
-  # Install swaylock-effects for better configuration
-  # hyprlock
-  swaylock -f
+  hyprlock
   ;;
 "$suspend")
   mpc -q pause
@@ -35,7 +33,7 @@ case $chosen in
 "$logout")
   # For Hyprland, Use Command for your WM/DE
   if [[ "$DESKTOP_SESSION" == "hyprland" ]]; then
-    hyprctl dispatch exit
+    hyprland exit
   elif [[ "$DESKTOP_SESSION" == "sway" ]]; then
     swaymsg exit
   elif [[ "$DESKTOP_SESSION" == "i3" ]]; then

@@ -51,7 +51,7 @@ textbox-prompt-colon {
 entry {
   placeholder:  "Search...";
   padding: 0px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 mode-switcher {
@@ -61,7 +61,7 @@ mode-switcher {
 
 button {
   padding: 3px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 listview {
@@ -71,17 +71,15 @@ listview {
   cycle: false;
   dynamic: false;
   fixed-height: false;
-  spacing: 0px;
   /* List view has the dash border, Remove it here */
-  /*border: 0px;*/
   margin: 0px;
   padding: 5px;
   border: 0px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 element {
   border: 0px;
-  border-radius: 5px;
-  padding: 3px;
+  border-radius: 0px;
+  padding: 2px;
 }

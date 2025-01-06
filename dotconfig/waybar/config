@@ -22,7 +22,7 @@
   "custom/power": {
       "format": "{icon}",
       "format-icons": "",
-      "on-click": "wlogout"
+      "on-click": "~/.config/rofi/scripts/rofi-power"
   },
 
 

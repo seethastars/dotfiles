@@ -8,9 +8,9 @@
 }
 
 
-/* --- See The Stars Colorscheme --- */
+/* --- Mountain Colorscheme --- */
 
-@define-color black     #111213;
+@define-color black     #161619;
 @define-color grey      #848884;
 @define-color white     #f2f3f4;
 
@@ -25,7 +25,7 @@
 /* --- Waybar General Config --- */
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
-    background-color: rgba(10, 10, 10, 0);
+    background-color: rgba(16, 16, 19, 0);
     border-radius: 0px;
     margin-right: 5px;
     margin-left: 5px;
@@ -35,7 +35,6 @@ window#waybar {
 /* --- Custom Stuff --- */
 .modules-right {
     background-color: @black;
-    border-radius: 10px;
 }
 
 #custom-separator {
@@ -51,7 +50,6 @@ window#waybar {
 #mpris {
     color: @white;
     background-color: @black;
-    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 7px;
@@ -70,7 +68,6 @@ window#waybar.empty #window {
 
 #workspaces {
     background-color: @black;
-    border-radius: 10px;
 }
 
 #workspaces button {
@@ -82,7 +79,7 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
     color: @white;
-    border-radius: 15px;
+    border-radius: 0px;
     transition: all 0.3s ease;
 }
 
