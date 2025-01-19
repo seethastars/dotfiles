@@ -25,7 +25,7 @@
 /* --- Waybar General Config --- */
 window#waybar {
 	  color: rgba(53, 185, 171, 1);
-    background-color: rgba(16, 16, 19, 0);
+    background-color: rgba(1, 1, 1, 1);
     border-radius: 0px;
     margin-right: 5px;
     margin-left: 5px;
@@ -33,10 +33,6 @@ window#waybar {
 
 
 /* --- Custom Stuff --- */
-.modules-right {
-    background-color: @black;
-}
-
 #custom-separator {
     color: rgba(255, 255, 255, 0.3);
 }
@@ -49,7 +45,6 @@ window#waybar {
 
 #mpris {
     color: @white;
-    background-color: @black;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 7px;
@@ -67,7 +62,6 @@ window#waybar.empty #window {
 }
 
 #workspaces {
-    background-color: @black;
 }
 
 #workspaces button {

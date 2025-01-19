@@ -1,0 +1,152 @@
+{
+  // --- General Config ---
+	"layer": "top",
+  "position": "top",
+	"height": 26,
+	"width": 1358,
+	"margin-top": 6,
+
+
+  // --- Modules ---   
+	"modules-left": ["hyprland/workspaces#cc", "mpris"],
+	"modules-center": [],
+	"modules-right": ["tray", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock", "custom/separator", "custom/power"],
+
+
+  // --- Custom Stuff --- 
+  "custom/separator": {
+      "format": "{icon}",
+      "format-icons": "|",
+  },
+
+  "custom/power": {
+      "format": "{icon}",
+      "format-icons": "",
+      "on-click": "~/.config/rofi/scripts/rofi-power"
+  },
+
+
+  // --- Workspaces Styles ---
+
+  // Numbers Style
+	"hyprland/workspaces": {
+		  "format": "{icon}",
+		  "on-click": "activate",
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+		  "persistent-workspaces": {
+        "1": [],
+		    "2": [],
+		    "3": [],
+		  },
+      "format-icons": {
+		    "1": "1",
+		    "2": "2",
+		    "3": "3",
+		    "4": "4",
+		    "5": "5",
+		    "6": "6",
+		    "7": "7",
+		    "8": "8",
+		    "9": "9",
+		    "10": "10",
+	    },
+		  //"sort-by-number": true
+	},
+
+  // Circles Style
+  "hyprland/workspaces#cc": {
+	    "active-only": false,
+	    "all-outputs": true,
+	    "format": "{icon}",
+	    "show-special": false,
+	    "on-click": "activate",
+	    "on-scroll-up": "hyprctl dispatch workspace e+1",
+	    "on-scroll-down": "hyprctl dispatch workspace e-1",
+	    "persistent-workspaces": {
+		      "1": [],
+		      "2": [],
+		      "3": [],
+		      "4": [],
+		      "5": [],
+	    },
+	    "format-icons": {
+		  "active": "",
+		  "default": "",
+      "empty": "",
+	    },
+  },
+
+  "mpris": {
+	"format": "{status_icon} {artist} - {title} [{position} - {length}]",
+	"format-paused": "{status_icon} <i>{artist} - {title} [{position} - {length}]</i>",
+	"player-icons": {
+		  "default": "▶",
+		  "mpv": "🎵",
+      "vlc": "󰕼 "
+	  },
+	  "status-icons": {
+		  "paused": "▶",
+      "playing": "󰏤"
+	  },
+    "interval": 1,
+	  "ignored-players": ["firefox"]
+  },
+
+	"tray": {
+		  "icon-size": 15,
+		  "spacing": 15
+	},
+
+  "pulseaudio": {
+		  "scroll-step": 5,
+		  "format": "{icon} {volume}%",
+      "format-muted": "  muted",
+		  "format-icons": {
+			"default": [" ", " ", " "],
+      "headphone": " ",
+		},
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+    "smooth-scrolling-threshold": 1,
+	},
+
+  "pulseaudio#mic": {
+      "format": "{format_source}",
+      "format-source": " on",
+      "format-source-muted": "  off",
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+  },
+
+  "battery": {
+    "bat": "BAT1",
+    "interval": 10,
+    "full-at": 100,
+    "design-capacity": false,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 10
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-full": "{icon} full",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["󰂃", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-time": "{H}h {M}min",
+    "tooltip": true,
+    "tooltip-format": "{timeTo} {power}w",
+  },
+
+  "clock": {
+      "format": "{:%A %d %B, %H:%M %p}",
+      "tooltip": false,
+      "actions": {
+      "on-click-right": "mode",
+      },
+      "interval": 1
+  },
+}
