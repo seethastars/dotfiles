@@ -14,6 +14,8 @@ alias cp='cp -r'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 
+alias fetch='fastfetch'
+
 # Change directory aliases
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -31,10 +33,4 @@ alias ungz='tar -xvzf'
 export EDITOR=nvim
 alias vim='nvim'
 
-PS1='[\u@\h \W]\$ '
-
-# Fastfetch startup
-fastfetch
-
-# Starship startup
-eval "$(starship init bash)"
+PS1='[\u@\h] \W 󰘧 '
