@@ -33,4 +33,4 @@ alias ungz='tar -xvzf'
 export EDITOR=nvim
 alias vim='nvim'
 
-PS1='[\u@\h] \W 󰘧 '
+PS1='[\u@\h \W]\$ '
