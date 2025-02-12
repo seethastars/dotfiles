@@ -12,7 +12,7 @@ u="$USER"
 
 while :
 do
-  read -p "Hi $u, do you want to install Hyprland dependecies? (y/n) " resp      # user response
+  read -p "Hi $u, would you like to install Hyprland dependecies? (y/n) " resp      # user response
 
     if [[ $resp =~ ^[Nn]$ ]]; then 
       exit 1
@@ -30,13 +30,18 @@ do
 
       echo -e "${YELLOW}Installing packages...${RC}"
 
-      # customize packages you want to install
-      paru -Syu hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent qt5-wayland hyprpaper hyprlock hypridle hyprshot wl-clipboard waybar rofi-wayland librewolf-bin foot starship qt5ct nwg-look thunar thunar-archive-plugin gvfs gvfs-gphoto2 gvfs-afc xarchiver imagemagick ristretto brightnessctl unzip unrar p7zip vlc cmus htop alsa-utils dosfstools papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd adobe-source-han-sans-jp-fonts
+      # define packages
+      hypr_pkgs='hyprland hyprpaper hyprlock hypridle hyprshot xdg-desktop-portal-hyprland xdg-desktop-portal-gtk qt5-wayland polkit-kde-agent waybar rofi-wayland'
+      util_pkgs='htop gvfs gvfs-afc thunar-archive-plugin xarchiver p7zip unzip unrar alsa-utils dosfstools xdg-user-dirs brightnessctl wl-clipboard'
+      app_pkgs='librewolf-bin foot thunar imagemagick ristretto vlc cmus neovim'
+      theme_pkgs='nwg-look qt5ct papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd'
 
-      echo -e "${GREEN}AUR packages installed.${RC}"
+      paru -Syu $hypr_pkgs $util_pkgs $app_pkgs $theme_pkgs
+
+      echo -e "${GREEN}Packages installed.\n${RC}"
       
       cd home/ && cp -r * ~/.config/ 
-      cd .. && mkdir ~/Pictures && cp -r Wallpapers/ ~/Pictures/
+      cp -r Wallpapers/ ~/Pictures/
       cp -r .bashrc ~/
       echo -e "${BLUE}Enjoy Hyprland.${RC}"
       exit 1
