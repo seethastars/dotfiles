@@ -12,12 +12,13 @@ u="$USER"
 
 while :
 do
-  read -p "Hi $u, would you like to install Hyprland dependecies? (y/n) " resp      # user response
+  read -p "Hi $u, would you like to install Hyprland dependecies? (y/n): " resp      # user response
 
-    if [[ $resp =~ ^[Nn]$ ]]; then 
+    if [[ $resp =~ ^[Nn]$ ]]; then
+      echo -e "${BLUE}Goodbye!${RC}"
       exit 1
 
-    elif [[ $resp =~ ^[Yy]$ ]] ||; then
+    elif [[ $resp =~ ^[Yy]$ ]]; then
 
       echo -e "${YELLOW}Installing paru as AUR helper...${RC}"
 
