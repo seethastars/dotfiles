@@ -22,6 +22,7 @@
   "custom/power": {
       "format": "{icon}",
       "format-icons": "",
+      "tooltip": false,
       "on-click": "~/.config/rofi/scripts/rofi-power"
   },
 
