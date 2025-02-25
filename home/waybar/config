@@ -2,15 +2,15 @@
   // --- General Config ---
 	"layer": "top",
   "position": "top",
-	"height": 26,
+	"height": 28,
 	"width": 1358,
 	"margin-top": 6,
 
 
   // --- Modules ---   
-	"modules-left": ["hyprland/workspaces#cc", "mpris"],
+	"modules-left": ["hyprland/workspaces#cc"],
 	"modules-center": [],
-	"modules-right": ["tray", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock", "custom/separator", "custom/power"],
+	"modules-right": ["tray", "cpu", "memory", "custom/separator", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock", "custom/separator", "custom/power"],
 
 
   // --- Custom Stuff --- 
@@ -94,13 +94,25 @@
   },
 
 	"tray": {
-		  "icon-size": 15,
+		  "icon-size": 14,
 		  "spacing": 15
 	},
 
+  "cpu": {
+      "interval": 1,
+      "format": "CPU {usage}%",
+      "max-length": 10
+  },
+
+  "memory": {
+      "interval": 1,
+      "format": "RAM {percentage}%",
+      "max-length": 10
+  },
+
   "pulseaudio": {
 		  "scroll-step": 5,
-		  "format": "{icon} {volume}%",
+		  "format": "{icon} {volume}",
       "format-muted": "  muted",
 		  "format-icons": {
 			"default": [" ", " ", " "],
@@ -130,10 +142,10 @@
       "warning": 30,
       "critical": 10
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-full": "{icon} full",
+    "format": "{icon} {capacity}",
+    "format-charging": " {capacity}",
+    "format-plugged": " {capacity}",
+    "format-full": "{icon} {capacity}",
     "format-alt": "{icon} {time}",
     "format-icons": ["󰂃", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "format-time": "{H}h {M}min",
@@ -142,7 +154,8 @@
   },
 
   "clock": {
-      "format": "{:%A %d %B, %H:%M %p}",
+      "format": "{:%H:%M %p}",
+      "format-alt": "{:%A %d %B}",
       "tooltip": false,
       "actions": {
       "on-click-right": "mode",

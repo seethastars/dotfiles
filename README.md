@@ -11,7 +11,7 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 <small> 
 
-> **Note:** I use the hyprland.sh script after a minimal install of Arch Linux using archinstall.
+> **Note:** I use the setup.sh script after a minimal install of Arch Linux using archinstall.
 
 </small>
 
