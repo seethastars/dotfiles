@@ -1,0 +1,85 @@
+// vim:ft=rasi
+configuration {
+  modi:                 "drun";
+  dpi:                  90;
+  show-icons:           false;
+  icon-theme:           "Papirus";
+  terminal:             "foot";
+  window-format:        "{w} · {c} · {t}";
+  disable-history:      false;
+  max-history-size:     50;
+}
+
+@import "colors"
+
+window {
+  /*Removing height make the window height equal to num of opts*/
+  height: 40%;
+  width: 50%;
+  orientation: vertical;
+  location: center;
+  anchor: center;
+  x-offset: 0px;
+  y-offset: 0px;
+  margin: 5px;
+  padding: 5px;
+  border: 0px;
+  border-radius: 0px;
+  spacing: 0px;
+  children: [ mainbox ];
+}
+
+inputbar {
+  spacing: 3px;
+  /*padding: top right bottom left*/
+  padding: 10px;
+  children: [entry];
+}
+
+prompt {
+  padding: 3px;
+  border-radius: 5px;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  padding: 3px 15px;
+  border-radius: 5px;
+  str: " "; /* */
+}
+
+entry {
+  placeholder:  "Search...";
+  padding: 0px;
+  border-radius: 0px;
+}
+
+mode-switcher {
+  spacing: 3px;
+  orientation: horizontal;
+}
+
+button {
+  padding: 3px;
+  border-radius: 0px;
+}
+
+listview {
+  lines: 7;
+  spacing: 3px;
+  scrollbar: false;
+  cycle: false;
+  dynamic: false;
+  fixed-height: false;
+  /* List view has the dash border, Remove it here */
+  margin: 0px;
+  padding: 5px;
+  border: 0px;
+  border-radius: 0px;
+}
+
+element {
+  border: 0px;
+  border-radius: 0px;
+  padding: 2px;
+}
