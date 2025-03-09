@@ -34,8 +34,8 @@ do
       # define packages
       hypr_pkgs='hyprland hyprpaper hyprlock hypridle hyprshot xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent waybar'
       util_pkgs='htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools xdg-user-dirs brightnessctl wl-clipboard'
-      app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto cmus neovim'
-      theme_pkgs='nwg-look papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd'
+      app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto vlc cmus neovim'
+      theme_pkgs='nwg-look qt5ct qt6ct papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd'
 
       paru -Syu $hypr_pkgs $util_pkgs $app_pkgs $theme_pkgs
 
