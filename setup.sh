@@ -32,18 +32,16 @@ do
       echo -e "${YELLOW}Installing packages...${RC}"
 
       # define packages
-      hypr_pkgs='hyprland hyprpaper hyprlock hypridle hyprshot xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent waybar'
+      hypr_pkgs='hyprland hyprpaper hyprlock hypridle hyprshot hyprpicker xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent waybar'
       util_pkgs='htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools xdg-user-dirs brightnessctl wl-clipboard'
-      app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto vlc cmus neovim'
+      app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim'
       theme_pkgs='nwg-look qt5ct qt6ct papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd'
 
       paru -Syu $hypr_pkgs $util_pkgs $app_pkgs $theme_pkgs
 
       echo -e "${GREEN}Packages installed.\n${RC}"
       
-      cd home/ && cp -r * ~/.config/ 
-      cd .. && cp -r Wallpapers/ ~/Pictures/
-      cp -r .bashrc ~/
+      cp home/* ~/.config/ && cp -r .bashrc ~/
       echo -e "${BLUE}Enjoy Hyprland.${RC}"
       exit 1
 
