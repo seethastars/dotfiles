@@ -40,8 +40,8 @@ do
 
       echo -e "${GREEN}Packages installed.\n${RC}"
       
-      cd home/ && cp -r * ~/.config/
-      cd .. && cp -r .bashrc ~/ && cp -r Wallpapers/ ~/Pictures/
+      cd home/nord/ && cp -r * ~/.config/
+      cd ../.. && cp -r .bashrc ~/ && cp -r Wallpapers/ ~/Pictures/
       echo -e "${BLUE}Enjoy Hyprland.${RC}"
       exit 1
 
