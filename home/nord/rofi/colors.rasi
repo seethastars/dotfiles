@@ -1,0 +1,77 @@
+* {
+  font:                   "JetBrainsMono Nerd Font 12";
+  
+  // Nord Colorscheme
+
+  background:     #18191F;
+  gray:           #808080;
+  white:          #bfbfbf;
+
+  red:            #bf616a;
+  green:          #a3be8c;
+  yellow:         #ebcb8b;
+  blue:           #81a1c1;
+  magenta:        #b48ead;
+  cyan:           #88c0d0;
+
+}
+
+window {
+}
+
+inputbar {
+    text-color:       @white;
+    background-color: @background;
+}
+
+entry {
+    text-color:       @white;
+    background-color: @background;
+}
+
+listview {
+    background-color: @background;
+}
+
+element-text {
+    highlight:        @blue;
+}
+
+element-icon {
+    size: 18;
+}
+
+element {
+    text-color:       @white;
+    background-color: @background;
+}
+
+element normal.normal {
+    text-color:       @white;
+    background-color: @background;
+}
+
+element normal.active {
+    text-color:       @white;
+    background-color: @background;
+}
+
+element selected.normal {
+    text-color:       @background;
+    background-color: @white;
+}
+
+element selected.active {
+    background-color: @white;
+    text-color:       @background;
+}
+
+element alternate.normal {
+    background-color: @background;
+    text-color:       @white;
+}
+
+element alternate.active {
+    background-color: @background;
+    text-color:       @white;
+}

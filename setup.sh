@@ -15,7 +15,6 @@ do
   read -p "Hi $u, would you like to install Hyprland dependecies? (y/n): " resp      # user response
 
     if [[ $resp =~ ^[Nn]$ ]]; then
-      echo -e "${BLUE}Goodbye!${RC}"
       exit 1
 
     elif [[ $resp =~ ^[Yy]$ ]]; then
@@ -41,7 +40,8 @@ do
 
       echo -e "${GREEN}Packages installed.\n${RC}"
       
-      cp home/* ~/.config/ && cp -r .bashrc ~/
+      cd home/ && cp -r * ~/.config/
+      cd .. && cp -r .bashrc ~/ && cp -r Wallpapers/ ~/Pictures/
       echo -e "${BLUE}Enjoy Hyprland.${RC}"
       exit 1
 
