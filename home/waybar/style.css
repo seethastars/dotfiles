@@ -9,23 +9,28 @@
 }
 
 
-/* --- Nord Colorscheme --- */
+/* --- Black Metal (Gorgoroth) Colorscheme --- 
 
-@define-color black     #3b4252;
-@define-color gray      #808080;
-@define-color white     #bfbfbf;
+Credits: https://github.com/metalelf0/base16-black-metal-scheme
 
-@define-color red       #bf616a;
-@define-color green     #a3be8c;
-@define-color yellow    #ebcb8b;
-@define-color blue      #81a1c1;
-@define-color magenta   #b48ead;
-@define-color cyan      #88c0d0;
+*/
+
+@define-color black     #000000;
+@define-color gray      #555555;
+@define-color white     #c1c1c1;
+
+@define-color red       #5f8787;
+@define-color green     #9b8d7f;
+@define-color yellow    #8c7f70;
+@define-color blue      #888888;
+@define-color magenta   #999999;
+@define-color cyan      #aaaaaa;
 
 
 /* --- Waybar General Config --- */
 window#waybar {
-    background-color: rgba(24, 25, 31, 1);
+    background-color: rgba(12, 12, 12, 1);
+    border-radius: 5px;
 }
 
 
@@ -40,8 +45,6 @@ window#waybar {
     padding-right: 15px;
 }
 
-
-
 #window {
 	  color: @white;
 }
@@ -50,6 +53,9 @@ window#waybar.empty #window {
     background-color: transparent;
     border: 0px;
 }
+
+
+/* --- Workspaces --- */
 
 #workspaces {
     padding: 0;
@@ -64,6 +70,9 @@ window#waybar.empty #window {
 #workspaces button.active {
     color: @white;
 }
+
+
+/* --- Modules --- */
 
 #tray {
     padding-left: 12px;

@@ -1,16 +1,15 @@
 {
   // --- General Config ---
-	"layer": "top",
-  "position": "bottom",
-	"height": 26,
-	"width": 1366,
-	"margin-top": 0,
+  "position": "top",
+	"height": 22,
+	"width": 1358,
+	"margin-top": 6,
 
 
   // --- Modules ---   
 	"modules-left": ["hyprland/workspaces"],
 	"modules-center": [],
-	"modules-right": ["tray", "cpu", "memory", "custom/separator", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock", "custom/separator", "custom/power"],
+	"modules-right": ["tray", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock"],
 
 
   // --- Custom Stuff --- 
@@ -39,6 +38,8 @@
         "1": [],
 		    "2": [],
 		    "3": [],
+        "4": [],
+        "5": [],
 		  },
       "format-icons": {
 		    "1": "1",
@@ -74,8 +75,8 @@
 
   "pulseaudio": {
 		  "scroll-step": 5,
-		  "format": "[vol] {volume}",
-      "format-muted": "[vol] muted",
+		  "format": "vol: {volume}",
+      "format-muted": "vol: muted",
 		  "format-icons": {
 		},
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -87,8 +88,8 @@
 
   "pulseaudio#mic": {
       "format": "{format_source}",
-      "format-source": "[mic] on",
-      "format-source-muted": "[mic] off",
+      "format-source": "mic: on",
+      "format-source-muted": "mic: off",
       "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
   },
 
@@ -102,10 +103,10 @@
       "warning": 30,
       "critical": 10
     },
-    "format": "[bat] {capacity}",
-    "format-charging":"[bat] {capacity}",
-    "format-plugged": "[bat] {capacity}",
-    "format-full": "[bat] {capacity}",
+    "format": "bat: {capacity}",
+    "format-charging":"bat: {capacity}",
+    "format-plugged": "bat: {capacity}",
+    "format-full": "bat: {capacity}",
     "format-alt": "{time}",
     "format-time": "{H}h {M}min",
     "tooltip": true,

@@ -3,16 +3,16 @@
   
   // Nord Colorscheme
 
-  background:     #18191F;
-  gray:           #808080;
-  white:          #bfbfbf;
+  background:     #0c0c0c;
+  gray:           #333333;
+  white:          #c1c1c1;
 
-  red:            #bf616a;
-  green:          #a3be8c;
-  yellow:         #ebcb8b;
-  blue:           #81a1c1;
-  magenta:        #b48ead;
-  cyan:           #88c0d0;
+  red:            #5f8787;
+  green:          #9b8d7f;
+  yellow:         #8c7f70;
+  blue:           #888888;
+  magenta:        #999999;
+  cyan:           #aaaaaa;
 
 }
 
@@ -34,7 +34,7 @@ listview {
 }
 
 element-text {
-    highlight:        @blue;
+    highlight:        @red;
 }
 
 element-icon {
