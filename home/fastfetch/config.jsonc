@@ -88,7 +88,7 @@
         {
             "type": "colors",
             "paddingLeft": 2,
-            "symbol": "square"
+            "symbol": "block"
         },
         {
             "type": "custom",

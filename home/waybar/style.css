@@ -30,7 +30,6 @@ Credits: https://github.com/metalelf0/base16-black-metal-scheme
 /* --- Waybar General Config --- */
 window#waybar {
     background-color: rgba(12, 12, 12, 1);
-    border-radius: 5px;
 }
 
 

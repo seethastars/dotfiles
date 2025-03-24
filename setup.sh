@@ -31,17 +31,19 @@ do
       echo -e "${YELLOW}Installing packages...${RC}"
 
       # define packages
-      hypr_pkgs='hyprland hyprpaper hyprlock hypridle hyprshot hyprpicker xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent waybar'
-      util_pkgs='htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools net-tools xdg-user-dirs brightnessctl wl-clipboard'
-      app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim'
-      theme_pkgs='nwg-look qt5ct qt6ct papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd'
+      hypr_pkgs='hyprland hyprpaper hyprlock hypridle hyprshot hyprpicker waybar'
+      hypr2_pkgs='xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-user-dirs polkit-kde-agent'
+      util_pkgs='htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools net-tools brightnessctl wl-clipboard'
+      app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim newsboat'
+      theme_pkgs='nwg-look papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd noto-fonts-emoji'
 
-      paru -Syu $hypr_pkgs $util_pkgs $app_pkgs $theme_pkgs
+      paru -Syu $hypr_pkgs $hypr2_pkgs $util_pkgs $app_pkgs $theme_pkgs
 
       echo -e "${GREEN}Packages installed.\n${RC}"
       
-      cd home/nord/ && cp -r * ~/.config/
-      cd ../.. && cp -r .bashrc ~/ && cp -r Wallpapers/ ~/Pictures/
+      cd home/ && cp -r * ~/.config/
+      cd .. && cp -r Wallpapers/ ~/Pictures/
+      cp -r .bashrc ~/.config/
       echo -e "${BLUE}Enjoy Hyprland.${RC}"
       exit 1
 
