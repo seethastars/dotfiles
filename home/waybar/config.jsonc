@@ -1,21 +1,21 @@
 {
   // --- General Config ---
   "position": "top",
-	"height": 20,
-	"width": 1358,
-	"margin-top": 5,
+  "height": 20,
+  "width": 1358,
+  "margin-top": 5,
 
 
   // --- Modules ---   
-	"modules-left": ["hyprland/workspaces"],
-	"modules-center": [],
-	"modules-right": ["tray", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["tray", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock"],
 
 
   // --- Custom Stuff --- 
   "custom/separator": {
       "format": "{icon}",
-      "format-icons": "|",
+      "format-icons": "|"
   },
 
   "custom/power": {
@@ -29,37 +29,36 @@
   // --- Workspaces Styles ---
 
   // Numbers Style
-	"hyprland/workspaces": {
-		  "format": "{icon}",
-		  "on-click": "activate",
+  "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
       "on-scroll-up": "hyprctl dispatch workspace e+1",
-	    "on-scroll-down": "hyprctl dispatch workspace e-1",
-		  "persistent-workspaces": {
-        "1": [],
-		    "2": [],
-		    "3": [],
-        "4": [],
-        "5": [],
-		  },
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "persistent-workspaces": {
+          "1": [],
+          "2": [],
+          "3": [],
+          "4": [],
+          "5": []
+      },
       "format-icons": {
-		    "1": "1",
-		    "2": "2",
-		    "3": "3",
-		    "4": "4",
-		    "5": "5",
-		    "6": "6",
-		    "7": "7",
-		    "8": "8",
-		    "9": "9",
-		    "10": "10",
-	    },
-		  //"sort-by-number": true
-	},
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4",
+          "5": "5",
+          "6": "6",
+          "7": "7",
+          "8": "8",
+          "9": "9",
+          "10": "10"
+      }
+  },
 
-	"tray": {
-		  "icon-size": 14,
-		  "spacing": 15
-	},
+  "tray": {
+      "icon-size": 14,
+      "spacing": 15
+  },
 
   "cpu": {
       "interval": 1,
@@ -74,43 +73,43 @@
   },
 
   "pulseaudio": {
-		  "scroll-step": 5,
-		  "format": "vol: {volume}",
+      "scroll-step": 5,
+      "format": "vol: {volume}",
       "format-muted": "vol: muted",
-		  "format-icons": {
-		},
-    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-    "on-click-right": "pavucontrol",
-    "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
-    "smooth-scrolling-threshold": 1,
-	},
+      "format-icons": {
+      },
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "on-click-right": "pavucontrol",
+      "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+      "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+      "smooth-scrolling-threshold": 1
+  },
 
   "pulseaudio#mic": {
       "format": "{format_source}",
       "format-source": "mic: on",
       "format-source-muted": "mic: off",
-      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
   },
 
   "battery": {
-    "bat": "BAT1",
-    "interval": 10,
-    "full-at": 100,
-    "design-capacity": false,
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 10
-    },
-    "format": "bat: {capacity}",
-    "format-charging":"bat: {capacity}",
-    "format-plugged": "bat: {capacity}",
-    "format-full": "bat: {capacity}",
-    "format-alt": "{time}",
-    "format-time": "{H}h {M}min",
-    "tooltip": true,
-    "tooltip-format": "{timeTo} {power}w",
+      "bat": "BAT1",
+      "interval": 10,
+      "full-at": 100,
+      "design-capacity": false,
+      "states": {
+          "good": 95,
+          "warning": 30,
+          "critical": 10
+      },
+      "format": "bat: {capacity}",
+      "format-charging":"bat: {capacity}",
+      "format-plugged": "bat: {capacity}",
+      "format-full": "bat: {capacity}",
+      "format-alt": "{time}",
+      "format-time": "{H}h {M}min",
+      "tooltip": true,
+      "tooltip-format": "{timeTo} {power}w"
   },
 
   "clock": {
@@ -118,8 +117,8 @@
       "format-alt": "{:%A %d %B}",
       "tooltip": false,
       "actions": {
-      "on-click-right": "mode",
+          "on-click-right": "mode"
       },
       "interval": 1
-  },
+  }
 }

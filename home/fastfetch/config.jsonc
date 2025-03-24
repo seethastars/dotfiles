@@ -41,9 +41,9 @@
             "key": "  ",
             "keyColor": "yellow"
         },
-	      {
-	          "type": "packages",
-	          "key": "  ",
+        {
+            "type": "packages",
+            "key": "  ",
             "keyColor": "blue"
         },
         {
