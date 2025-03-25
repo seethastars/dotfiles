@@ -32,7 +32,7 @@ do
 
       # define packages
       hypr_pkgs='hyprland hyprpaper hyprlock hypridle hyprshot hyprpicker waybar'
-      hypr2_pkgs='xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-user-dirs polkit-kde-agent'
+      hypr2_pkgs='xdg-desktop-portal-hyprland xdg-desktop-portal-gtk polkit-kde-agent'
       util_pkgs='htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools net-tools brightnessctl wl-clipboard'
       app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim newsboat'
       theme_pkgs='nwg-look papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd noto-fonts-emoji'
