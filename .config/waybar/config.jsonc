@@ -1,21 +1,26 @@
 {
   // --- General Config ---
   "position": "top",
-  "height": 20,
-  "width": 1358,
-  "margin-top": 5,
+  "height": 19,
+  "width": 1366,
+  "margin-top": 0,
 
 
   // --- Modules ---   
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": [],
-  "modules-right": ["tray", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock"],
+  "modules-right": ["tray", "cpu", "memory", "custom/separator", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "custom/weather", "custom/separator", "clock"],
 
 
   // --- Custom Stuff --- 
   "custom/separator": {
       "format": "{icon}",
       "format-icons": "|"
+  },
+
+  "custom/weather": {
+      "exec": "~/.config/waybar/scripts/weather.sh",
+      "interval": 1000
   },
 
   "custom/power": {
@@ -60,23 +65,30 @@
       "spacing": 15
   },
 
+  "hyprland/window": {
+      "format": "{title}",
+      "separate-outputs": true
+  },
+
   "cpu": {
       "interval": 1,
-      "format": "[cpu] {usage}%",
-      "max-length": 10
+      "format": "[CPU   {usage}%]",
+      "max-length": 20
   },
 
   "memory": {
       "interval": 1,
-      "format": "[ram] {percentage}%",
-      "max-length": 10
+      "format": "[RAM   {percentage}%]",
+      "max-length": 20
   },
 
   "pulseaudio": {
       "scroll-step": 5,
-      "format": "vol: {volume}",
-      "format-muted": "vol: muted",
+      "format": "{icon} {volume}",
+      "format-muted": "  muted",
       "format-icons": {
+          "default": ["", "", ""],
+          "headphone": ""
       },
       "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
       "on-click-right": "pavucontrol",
@@ -87,8 +99,8 @@
 
   "pulseaudio#mic": {
       "format": "{format_source}",
-      "format-source": "mic: on",
-      "format-source-muted": "mic: off",
+      "format-source": "Mic: 󰍬",
+      "format-source-muted": "Mic: 󰍭",
       "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
   },
 
@@ -102,10 +114,11 @@
           "warning": 30,
           "critical": 10
       },
-      "format": "bat: {capacity}",
-      "format-charging":"bat: {capacity}",
-      "format-plugged": "bat: {capacity}",
-      "format-full": "bat: {capacity}",
+      "format": "{icon} {capacity}",
+      "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰁹"],
+      "format-charging":" {capacity}",
+      "format-plugged": " {capacity}",
+      "format-full": "{icon} {capacity}",
       "format-alt": "{time}",
       "format-time": "{H}h {M}min",
       "tooltip": true,
@@ -113,8 +126,7 @@
   },
 
   "clock": {
-      "format": "{:%H:%M %p}",
-      "format-alt": "{:%A %d %B}",
+      "format": "{:%A, %d %B  %I:%M %p}",
       "tooltip": false,
       "actions": {
           "on-click-right": "mode"

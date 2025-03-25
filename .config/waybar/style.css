@@ -8,16 +8,12 @@
     box-shadow: none;
 }
 
+/* Colorscheme */
 
-/* --- Black Metal (Gorgoroth) Colorscheme --- 
-
-Credits: https://github.com/metalelf0/base16-black-metal-scheme
-
-*/
-
-@define-color black     #000000;
-@define-color gray      #555555;
+@define-color black     #0F0F0F;
+@define-color gray      #505050;
 @define-color white     #c1c1c1;
+@define-color warm      #A49A87;
 
 @define-color red       #5f8787;
 @define-color green     #9b8d7f;
@@ -29,7 +25,7 @@ Credits: https://github.com/metalelf0/base16-black-metal-scheme
 
 /* --- Waybar General Config --- */
 window#waybar {
-    background-color: rgba(12, 12, 12, 1);
+    background-color: rgba(164, 154, 135, 1);
 }
 
 
@@ -38,14 +34,21 @@ window#waybar {
     color: rgba(255, 255, 255, 0.3);
 }
 
-#custom-power {
+#custom-weather {
     color: @white;
-    padding-left: 7px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
+.modules-right {
+    background-color: @black;
+}
+
+
 #window {
-    color: @white;
+    color: @black;
+    background-color: @warm;
+    margin-left: 5px;
 }
 
 window#waybar.empty #window {
@@ -57,6 +60,7 @@ window#waybar.empty #window {
 /* --- Workspaces --- */
 
 #workspaces {
+    background-color: @black;
     padding: 0;
 }
 
@@ -67,7 +71,8 @@ window#waybar.empty #window {
 }
 
 #workspaces button.active {
-    color: @white;
+    color: @black;
+    background-color: @warm;
 }
 
 

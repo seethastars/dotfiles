@@ -5,11 +5,17 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Default programs
+export EDITOR="nvim"
+export VISUAL="nvim"
+export BROWSER="librewolf"
+
 # Custom aliases
 alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias cp='cp -r'
 alias grep='grep --color=auto'
+alias vim='nvim'
 
 # Change directory aliases
 alias ..='cd ..'
@@ -24,11 +30,6 @@ alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
-
-# Default editor
-export EDITOR=neovim
-export VISUAL=neovim
-alias vim='nvim'
 
 # Prompt
 PS1='[\u@\h \W]\$ '
