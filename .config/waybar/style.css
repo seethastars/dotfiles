@@ -1,0 +1,85 @@
+/* --- General Config --- */ 
+* {
+    font-family: JetBrains Mono Nerd Font, SymbolsNerdFont;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Colorscheme */
+
+@define-color black     #121212;
+@define-color gray      #505050;
+@define-color white     #c1c1c1;
+@define-color warm      #A49A87;
+
+@define-color red       #5f8787;
+@define-color green     #9b8d7f;
+@define-color yellow    #8c7f70;
+@define-color blue      #888888;
+@define-color magenta   #999999;
+@define-color cyan      #aaaaaa;
+
+
+/* --- Waybar General Config --- */
+window#waybar {
+    background-color: rgba(18, 18, 18, 1);
+}
+
+
+/* --- Custom Stuff --- */
+#custom-separator {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: 0px;
+}
+
+
+/* --- Workspaces --- */
+
+#workspaces {
+    padding: 0;
+}
+
+#workspaces button {
+    color: @gray;
+    padding: 0px 5px;
+    min-height: 0px;
+}
+
+#workspaces button.active {
+    color: @black;
+    background-color: @white;
+}
+
+
+/* --- Modules --- */
+
+#tray {
+    padding-left: 12px;
+    padding-right: 5px;
+}
+
+#pulseaudio {
+    color: @white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#battery {
+    color: @white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    color: @white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
