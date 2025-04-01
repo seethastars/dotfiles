@@ -12,7 +12,7 @@ u="$USER"
 
 while :
 do
-  read -p "Hi $u, would you like to install River dependecies? (y/n): " resp      # user response
+  read -p "Hi $u, would you like to install Hyprland dependecies? (y/n): " resp      # user response
 
     if [[ $resp =~ ^[Nn]$ ]]; then
       exit 1
@@ -31,19 +31,19 @@ do
       echo -e "${YELLOW}Installing packages...${RC}"
 
       # define packages
-      river_pkgs='river swaybg swayidle swaylock waybar'
-      river2_pkgs='xdg-desktop-portal-wlr xdg-desktop-portal-gtk polkit-kde-agent'
-      util_pkgs='man mako htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools net-tools brightnessctl wl-clipboard'
-      app_pkgs='librewolf-bin foot rofi-wayland thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim newsboat yt-dlp'
+      hypr_pkgs='hyprland hyprpaper hypridle hyprlock hyprpicker hyprpolkitagent'
+      hypr2_pkgs='xdg-desktop-portal-hyprland xdg-desktop-portal-gtk waybar'
+      util_pkgs='man dunst htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools net-tools brightnessctl wl-clipboard'
+      app_pkgs='librewolf-bin foot fuzzel thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim newsboat yt-dlp'
       theme_pkgs='nwg-look papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd noto-fonts-emoji'
 
-      paru -Syu $river_pkgs $river2_pkgs $util_pkgs $app_pkgs $theme_pkgs
+      paru -Syu $hypr_pkgs $hypr2_pkgs $util_pkgs $app_pkgs $theme_pkgs
 
       echo -e "${GREEN}Packages installed.\n${RC}"
       
       cp -r .config/ .bashrc ~/
       mkdir ~/pix/ && cp -r wallpapers/ ~/pix/
-      echo -e "${BLUE}A peacful river will comfort you.${RC}"
+      echo -e "${BLUE}Enjoy Hyprland.${RC}"
       exit 1
 
       echo -e "${RED}Please type Y for confirm or N for decling (^C to quit.)${RC}"
