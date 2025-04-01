@@ -1,5 +1,5 @@
 {
-  // --- General Config ---
+  // --- Waybar Config ---
   "position": "bottom",
   "height": 19,
   "width": 1366,
@@ -19,9 +19,7 @@
   },
 
 
-  // --- Workspaces Styles ---
-
-  // Numbers Style
+  // --- Workspaces ---
   "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
