@@ -1,7 +1,7 @@
 <!-- Installation Instructions -->
-## River Setup
+## Hyprland Setup
 
-to install my river dotfiles, follow these steps:
+to install my Hyprland dotfiles, follow these steps:
 
 <small> 
 
