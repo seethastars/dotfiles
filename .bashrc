@@ -56,6 +56,3 @@ PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[32m\]\h\[\e[
 
 # Prompt
 #PS1='\u > \h \W > '
-
-# Created by `pipx` on 2025-03-31 20:59:25
-export PATH="$PATH:/home/pwnd/.local/bin"
