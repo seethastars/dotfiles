@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# set script to exit on error
 set -e
 
+# variables
 RC='\e[0m'
 RED='\e[31m'
 YELLOW='\e[33m'
@@ -12,6 +14,8 @@ u="$USER"
 
 while :
 do
+  echo -e "${BLUE}\n''We are all alone on life's journey, held captive by the limitations of human consciousness.'' "-tokyospliff"\n${RC}"
+
   read -p "Hi $u, would you like to install Hyprland dependecies? (y/n): " resp      # user response
 
     if [[ $resp =~ ^[Nn]$ ]]; then
