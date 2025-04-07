@@ -15,15 +15,19 @@ export TERMINAL="foot"
 export TERMINAL_PROG="foot"
 export BROWSER="librewolf"
 
+
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
+export GIT_CONFIG_GLOBAL="${XDG_CONFIG_HOME:-$HOME/.config}/git/gitconfig"
+export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
 
+export LESSHISTFILE="-"
 export HISTCONTROL=ignoredups
 HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/bash/history"
 
-export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
 
 # Custom aliases
 alias ls='ls -hN --color=auto --group-directories-first'
@@ -52,7 +56,5 @@ alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
 
-PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[37m\]\\$\[\e[m\] "
-
 # Prompt
-#PS1='\u > \h \W > '
+PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[37m\]\\$\[\e[m\] "
