@@ -1,0 +1,5 @@
+set clean-database-on-startup true
+set reload-period 30
+
+# Custom keybinds
+bind m exec mpv "%l"

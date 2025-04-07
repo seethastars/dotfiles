@@ -35,11 +35,11 @@ do
       echo -e "${YELLOW}Installing packages...${RC}"
 
       # define packages
-      hypr_pkgs='hyprland hyprpaper hypridle hyprlock hyprpicker hyprpolkitagent'
+      hypr_pkgs='hyprland hyprpaper hypridle hyprlock hyprshot hyprpicker hyprpolkitagent'
       hypr2_pkgs='xdg-desktop-portal-hyprland xdg-desktop-portal-gtk waybar'
       util_pkgs='man dunst htop gvfs gvfs-afc xarchiver p7zip unzip unrar alsa-utils dosfstools net-tools brightnessctl wl-clipboard'
-      app_pkgs='librewolf-bin foot fuzzel thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim newsboat yt-dlp'
-      theme_pkgs='nwg-look papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd noto-fonts-emoji'
+      app_pkgs='librewolf-bin foot fuzzel thunar thunar-archive-plugin imagemagick ristretto mpv cmus neovim newsraft yt-dlp'
+      theme_pkgs='nwg-look papirus-icon-theme gnome-themes-extra ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji'
 
       paru -Syu $hypr_pkgs $hypr2_pkgs $util_pkgs $app_pkgs $theme_pkgs
 
