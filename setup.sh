@@ -14,8 +14,6 @@ u="$USER"
 
 while :
 do
-  echo -e "${BLUE}\n''We are all alone on life's journey, held captive by the limitations of human consciousness.'' "-tokyospliff"\n${RC}"
-
   read -p "Hi $u, would you like to install Hyprland dependecies? (y/n): " resp      # user response
 
     if [[ $resp =~ ^[Nn]$ ]]; then
