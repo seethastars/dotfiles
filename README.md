@@ -1,6 +1,8 @@
 <!-- Installation Instructions -->
 ## Hyprland Setup
 
+![img](.assets/desktop.png)
+
 to install my Hyprland dotfiles, follow these steps:
 
 <small> 
