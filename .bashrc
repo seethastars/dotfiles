@@ -39,6 +39,7 @@ alias mv='mv -iv'
 alias rm='rm -vI'
 alias mkd='mkdir -pv'
 
+alias z='zathura'
 alias vim='nvim'
 alias ff='fastfetch'
 
