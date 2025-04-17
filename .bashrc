@@ -5,15 +5,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Auto change directory only by typing its name
-shopt -s autocd
-
 # Default programs
-export EDITOR="nvim"
-export VISUAL="nvim"
 export TERMINAL="foot"
 export TERMINAL_PROG="foot"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export BROWSER="librewolf"
+export READER="zathura"
 
 
 # ~/ Clean-up:
@@ -40,7 +38,7 @@ alias rm='rm -vI'
 alias mkd='mkdir -pv'
 
 alias z='zathura'
-alias vim='nvim'
+alias v='nvim'
 alias ff='fastfetch'
 
 # Change directory aliases
@@ -56,6 +54,12 @@ alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
+
+# Fastfetch startup
+fastfetch
+
+# Pywal colorscheme
+(cat ~/.cache/wal/sequences &)
 
 # Prompt
 PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[37m\]\\$\[\e[m\] "

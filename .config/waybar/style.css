@@ -10,22 +10,12 @@
 
 /* Colorscheme */
 
-@define-color black     #121212;
-@define-color gray      #505050;
-@define-color white     #c1c1c1;
-@define-color warm      #A49A87;
-
-@define-color red       #5f8787;
-@define-color green     #9b8d7f;
-@define-color yellow    #8c7f70;
-@define-color blue      #888888;
-@define-color magenta   #999999;
-@define-color cyan      #aaaaaa;
-
+@import "/home/pwnd/.cache/wal/colors-waybar.css";
 
 /* --- Waybar General Config --- */
 window#waybar {
-    background-color: rgba(18, 18, 18, 1);
+    background-color: @color5;
+    /*rgba(136, 136, 136, 1);*/
 }
 
 
@@ -34,6 +24,21 @@ window#waybar {
     color: rgba(255, 255, 255, 0.3);
 }
 
+#custom-weather {
+    color: @foreground;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.modules-right {
+    background-color: @background;
+}
+
+#window {
+    color: @background;
+    background-color: @color5;
+    padding-left: 5px;
+}
 
 window#waybar.empty #window {
     background-color: transparent;
@@ -45,17 +50,18 @@ window#waybar.empty #window {
 
 #workspaces {
     padding: 0;
+    background-color: @background;
 }
 
 #workspaces button {
-    color: @gray;
+    color: @color7;
     padding: 0px 5px;
     min-height: 0px;
 }
 
 #workspaces button.active {
-    color: @black;
-    background-color: @white;
+    color: @background;
+    background-color: @color5;
 }
 
 
@@ -67,19 +73,19 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
-    color: @white;
+    color: @foreground;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #battery {
-    color: @white;
+    color: @foreground;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 #clock {
-    color: @white;
+    color: @foreground;
     padding-left: 10px;
     padding-right: 10px;
 }

@@ -1,21 +1,38 @@
 {
   // --- Waybar Config ---
-  "position": "bottom",
-  "height": 19,
+  "position": "top",
+  "height": 20,
   "width": 1366,
   "margin-top": 0,
+  "reload_style_on_change": true,
 
 
   // --- Modules ---   
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": [],
-  "modules-right": ["tray", "pulseaudio", "pulseaudio#mic", "battery", "custom/separator", "clock"],
+  "modules-right": [
+      "tray", 
+      "pulseaudio", 
+      "pulseaudio#mic", 
+      "battery", 
+      "custom/separator", 
+      "custom/weather", 
+      "custom/separator", 
+      "clock"
+  ],
 
 
   // --- Custom Stuff --- 
   "custom/separator": {
       "format": "{icon}",
       "format-icons": "|"
+  },
+
+  "custom/weather": {
+      "exec": "~/.local/bin/weather.sh",
+      "tooltip": false,
+      "interval": 10,
+      "max-length": 100
   },
 
 
@@ -44,6 +61,12 @@
           "9": "9",
           "10": "10"
       }
+  },
+
+  "hyprland/window": {
+      "format": "{title}",
+      "separate-outputs": true,
+      "length": 100
   },
 
   "tray": {
@@ -95,8 +118,8 @@
   },
 
   "clock": {
-      "format": "{:%I:%M %p}",
-      "format-alt": "{:%A, %d %B}",
+      //"format-alt": "{:%A, %d %B}",
+      "format": "{:%A, %d %B  %I:%M %p}",
       "tooltip": false,
       "actions": {
           "on-click-right": "mode"
