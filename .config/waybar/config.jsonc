@@ -1,0 +1,77 @@
+{
+  // --- Waybar ---
+  "position": "top",
+  "margin-top": 0,
+  "height": 20,
+  "width": 1366,
+  "reload_style_on_change": true,
+
+  // --- Modules ---
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["tray", "pulseaudio", "battery", "custom/separator", "clock"],
+
+  "custom/separator": {
+    "format": "|",
+    "tooltip": false
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "I",
+      "2": "II",
+      "3": "III",
+      "4": "IV",
+      "5": "V",
+      "6": "VI",
+      "7": "VII",
+      "8": "VIII",
+      "9": "IX",
+      "10": "X"
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+
+  "tray": {
+    "icon-size": 15,
+    "spacing": 5
+  },
+
+  "pulseaudio": {
+    "format": "VOL {volume}",
+    "format-muted": "VOL muted",
+    "format-icons": {
+      "headphone": "",
+      "default": ["", ""]
+    },
+    "scroll-step": 5,
+    "ignored-sinks": ["Easy Effects Sink"],
+    "tooltip": false
+  },
+
+  "battery": {
+    "bat": "BAT1",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "BAT {capacity}",
+    "format-icons": ["󰁺", "󰁼", "󰁿", "󰂀", "󰁹"],
+    "format-charging": "BAT {capacity}",
+    "max-length": 25,
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%A %d %B,  %I:%M %p}",
+    "tooltip": false
+  }
+}

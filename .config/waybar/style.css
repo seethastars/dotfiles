@@ -1,0 +1,65 @@
+* {
+  font-family: Iosevka Nerd Font;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 0px;
+  min-height: 0px;
+}
+
+/* Colorscheme - base16-black-metal-gorgoroth */
+
+@define-color background  #000000;
+@define-color foreground  #c1c1c1;
+
+@define-color color1  #556677;
+@define-color color2  #8c7f70;
+@define-color color3  #9b8d7f;
+@define-color color4  #888888;
+@define-color color5  #999999;
+@define-color color6  #aaaaaa;
+
+
+window#waybar { 
+    background: rgba(0, 0, 0, 1);
+}
+
+#workspaces {
+}
+
+#workspaces button {
+    color: @color6;
+    padding: 0px 5px;
+    min-height: 0px;
+}
+
+#workspaces button.active {
+    color: @background;
+    background-color: @color1;
+}
+
+#custom-separator {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+#tray {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#pulseaudio {
+    color: @foreground;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#battery {
+    color: @foreground;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    color: @foreground;
+    padding-left: 10px;
+    padding-right: 10px;
+}
